@@ -1,0 +1,42 @@
+{
+  "id": "courtyard-ruang-baca",
+  "version": "v1",
+  "status": "candidate-awaiting-user-review",
+  "source": "projects/kurang-yakin-bukan-kurang-tahu/v1/src/World.tsx",
+  "portable": false,
+  "dependency_note": "Environment exported from story-bound World module; imports Character, Elements, brand-data. Extract and validate before standalone reuse.",
+  "anchors": {
+    "door": {
+      "x": 1395,
+      "threshold_y": 1460
+    },
+    "table": {
+      "left": 1660,
+      "right": 2710,
+      "surface_y": [
+        1410,
+        1560
+      ]
+    },
+    "community_board": {
+      "x": 650,
+      "y": 930,
+      "feet_y": 1470
+    },
+    "naya_seat": {
+      "x": 1910,
+      "feet_y": 1740
+    },
+    "yan_seat": {
+      "x": 2400,
+      "feet_y": 1740
+    },
+    "notebook": {
+      "x": 1960,
+      "y": 1450
+    }
+  },
+  "lighting": "consistent afternoon; no day/night reset",
+  "depth": "background wall/windows; mid-depth rear silhouettes and noticeboard; detailed actors front; table/forearms preserve grip layers",
+  "preview": "shared/previews/courtyard-ruang-baca.jpg"
+}

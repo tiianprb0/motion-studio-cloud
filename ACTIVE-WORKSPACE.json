@@ -1,0 +1,223 @@
+{
+ "updated": "2026-11-22",
+ "note": "Bagian 'active' diperbarui otomatis oleh tools/render-film.cjs setiap render penuh. Status persetujuan diubah manual setelah pengguna menyetujui.",
+ "active": {
+  "project": "relokasi-badak-jawa",
+  "version": "v1",
+  "root": "projects/relokasi-badak-jawa/v1",
+  "film": "projects/relokasi-badak-jawa/v1/src/Film.tsx",
+  "output": "projects/relokasi-badak-jawa/v1/04-Hasil/Badaknya-Diselamatkan-Warganya-v1-SFX.mp4",
+  "lock": "projects/relokasi-badak-jawa/v1/04-Hasil/Badaknya-Diselamatkan-Warganya-v1.lock.json",
+  "rendered": "2026-11-21T09:11:26.777Z",
+  "status": "disetujui pengguna 2026-11-22 (\"Setujui video\"); di siap-unggah/badaknya-diselamatkan-warganya"
+ },
+ "approved": [
+  {
+   "project": "cuekin-buzzer",
+   "version": "v1",
+   "root": "projects/cuekin-buzzer/v1",
+   "film": "projects/cuekin-buzzer/v1/src/Film.tsx",
+   "output": "projects/cuekin-buzzer/v1/04-Hasil/Kerja-Gratis-buat-Buzzer-v1-rev1.mp4",
+   "lock": "projects/cuekin-buzzer/v1/04-Hasil/Kerja-Gratis-buat-Buzzer-v1-rev1.lock.json",
+   "rendered": "2026-11-20T14:11:11.501Z",
+   "status": "disetujui pengguna 2026-11-20 (\"Setujui video\"); di siap-unggah/kerja-gratis-buat-buzzer",
+   "note": "dipindah otomatis dari \"active\" saat render projects/relokasi-badak-jawa/v1/Badaknya-Diselamatkan-Warganya-v1 (2026-11-21)"
+  },
+  {
+   "project": "kebakaran-hutan-papua",
+   "version": "v1",
+   "root": "projects/kebakaran-hutan-papua/v1",
+   "film": "projects/kebakaran-hutan-papua/v1/src/Film.tsx",
+   "output": "projects/kebakaran-hutan-papua/v1/04-Hasil/Bukan-Kesalahan-Kami-v1.mp4",
+   "lock": "projects/kebakaran-hutan-papua/v1/04-Hasil/Bukan-Kesalahan-Kami-v1.lock.json",
+   "rendered": "2026-11-18T08:44:35.223Z",
+   "status": "disetujui pengguna 18 Nov 2026 (chat: \"Setujui video\"); disalin ke siap-unggah/bukan-kesalahan-kami (belum terunggah). \"Bukan Kesalahan Kami?\": orasi kritik Naya (eleven_v4, nada marah) atas revisi naskah pengguna (\"aku mau naskah nya soal kritik ke pemerintah, orasi nya tajam, sedikit marah, mention kebakaran hutan di province lain juga\"); storyboard 15 panel disetujui hari yang sama. 75,3 dtk, -14,0 LUFS / -1,1 dBTP, 31 efek suara, gerak 38% diam, audit bersih.",
+   "output_final": "projects/kebakaran-hutan-papua/v1/04-Hasil/Bukan-Kesalahan-Kami-v1-SFX.mp4",
+   "thumbnail": "projects/kebakaran-hutan-papua/v1/04-Hasil/Thumbnail-Bukan-Kesalahan-Kami-v1-pose.png",
+   "thumbnail_alternatif": "projects/kebakaran-hutan-papua/v1/04-Hasil/Thumbnail-Bukan-Kesalahan-Kami-v1-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/cuekin-buzzer/v1/Kerja-Gratis-buat-Buzzer-v1 (2026-11-20)"
+  },
+  {
+   "project": "kampung-less",
+   "version": "v3",
+   "root": "projects/kampung-less/v3",
+   "film": "projects/kampung-less/v3/src/Film.tsx",
+   "output": "projects/kampung-less/v3/04-Hasil/Kampung-Less-v3.mp4",
+   "lock": "projects/kampung-less/v3/04-Hasil/Kampung-Less-v3.lock.json",
+   "rendered": "2026-11-17T23:04:33.938Z",
+   "status": "disetujui pengguna 18 Nov 2026 (chat: \"Setujui video\"); disalin ke siap-unggah/keresahan-yang-kamu-hapus-lagi (belum terunggah; tayang ditahan). v3 = alur & adegan disusun ulang atas \"masih gak bagusss\" → \"Alur & adegannya\" (satu benang merah: keresahan Naya → lampion emas → tetangga bilang \"aku juga\"; deret jendela kos setup→payoff; masuk web lewat layar HP), lalu revisi atas storyboard v3 langsung jadi video: \"gak mau ada laki laki yang masuk ke kost naya, selain yan\" → kos putri, penghuni jendela kos semua perempuan. Narasi sama dengan v2 rev1 (audio/sambung-e730063b). 81,4 dtk, -14,0 LUFS / -1,3 dBTP, 28 efek suara, gerak 34% diam, audit bersih. TAYANG DITAHAN sampai web diluncurkan.",
+   "output_final": "projects/kampung-less/v3/04-Hasil/Kampung-Less-v3-SFX.mp4",
+   "thumbnail": "projects/kampung-less/v3/04-Hasil/Thumbnail-Kampung-Less-v3-pose.png",
+   "thumbnail_alternatif": "projects/kampung-less/v3/04-Hasil/Thumbnail-Kampung-Less-v3-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/kebakaran-hutan-papua/v1/Bukan-Kesalahan-Kami-v1 (2026-11-18)"
+  },
+  {
+   "project": "hari-pertama-kerja",
+   "version": "v1",
+   "root": "projects/hari-pertama-kerja/v1",
+   "film": "projects/hari-pertama-kerja/v1/src/Film.tsx",
+   "output": "projects/hari-pertama-kerja/v1/04-Hasil/Hari-Pertama-Kerja-v1-rev6.mp4",
+   "lock": "projects/hari-pertama-kerja/v1/04-Hasil/Hari-Pertama-Kerja-v1-rev6.lock.json",
+   "rendered": "2026-11-13T12:11:00.635Z",
+   "status": "disetujui pengguna 14 Nov 2026 01.56 WIB (tombol \"Setujui rev6\" di Claude Code; menggantikan rev5); disalin ke siap-unggah/masih-ingat-hari-pertama-kerja (belum terunggah). Versi berlagu dibuat ulang dari rev6 dengan pengaturan sama (The One That Got Away mulai 2:31.44, lagu −5 dB, ducking 8 dB): 04-Hasil/backsound/masih-ingat-hari-pertama-kerja-backsound-the-one-that-got-away-4.mp4. rev6 = Yan sekarang tidak diam: mengetik, kesal saat pesan masuk, ke mesin fotokopi (shared/props/fotokopi/v1) dengan lesu, mesin macet, lunglai, HP kerja di kamar. Narasi dan subtitle sama dengan rev5.",
+   "output_final": "projects/hari-pertama-kerja/v1/04-Hasil/Hari-Pertama-Kerja-v1-rev6-SFX.mp4",
+   "thumbnail": "projects/hari-pertama-kerja/v1/04-Hasil/Thumbnail-Hari-Pertama-v1-pose.png",
+   "thumbnail_alternatif": "projects/hari-pertama-kerja/v1/04-Hasil/Thumbnail-Hari-Pertama-v1-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/kampung-less/v1/Kampung-Less-v1 (2026-11-17)"
+  },
+  {
+   "project": "hari-pertama-kerja",
+   "version": "v1",
+   "root": "projects/hari-pertama-kerja/v1",
+   "film": "projects/hari-pertama-kerja/v1/src/Film.tsx",
+   "output": "projects/hari-pertama-kerja/v1/04-Hasil/Hari-Pertama-Kerja-v1-rev5.mp4",
+   "lock": "projects/hari-pertama-kerja/v1/04-Hasil/Hari-Pertama-Kerja-v1-rev5.lock.json",
+   "rendered": "2026-11-13T08:57:08.396Z",
+   "status": "disetujui pengguna 13 Nov 2026 16.30 WIB (tombol \"Setujui\" di dashboard; video rev5); pernah di siap-unggah/masih-ingat-hari-pertama-kerja; diganti rev6 14 Nov 2026. Storyboard disetujui 13 Nov 2026 12.29 WIB. rev5 atas jawaban 13 Nov 2026 15.42 WIB: potongan per kalimat dikembalikan, bingkai berurutan dibuat beda ukuran/sudut (tidak 'looping' setengah badan zoom sama); Yan hari pertama tetap berjalan ke posisi barunya, overlay memudar. rev2: garis label siku L; rev1: Yan hari pertama tidak transparan. Audio sama. Penghapusan kunci rev1 ditahan pengguna.",
+   "output_final": "projects/hari-pertama-kerja/v1/04-Hasil/Hari-Pertama-Kerja-v1-rev5-SFX.mp4",
+   "thumbnail": "projects/hari-pertama-kerja/v1/04-Hasil/Thumbnail-Hari-Pertama-v1-pose.png",
+   "thumbnail_alternatif": "projects/hari-pertama-kerja/v1/04-Hasil/Thumbnail-Hari-Pertama-v1-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/hari-pertama-kerja/v1/Hari-Pertama-Kerja-v1-rev6 (2026-11-13)"
+  },
+  {
+   "project": "aku-bisa-jadi-villain",
+   "version": "v2",
+   "root": "projects/aku-bisa-jadi-villain/v2",
+   "film": "projects/aku-bisa-jadi-villain/v2/src/Film.tsx",
+   "output": "projects/aku-bisa-jadi-villain/v2/04-Hasil/Aku-Bisa-Jadi-Villain-v2.mp4",
+   "lock": "projects/aku-bisa-jadi-villain/v2/04-Hasil/Aku-Bisa-Jadi-Villain-v2.lock.json",
+   "rendered": "2026-11-12T13:05:52.093Z",
+   "status": "disetujui pengguna 13 Nov 2026 (\"Setujui video\"); disalin ke siap-unggah/aku-bisa-jadi-villain (belum terunggah). v2 = Aku Bisa Jadi Villain di panggung flat 2D + cahaya 2D, lokasi kamar-naya-2d/v1; revisi 4: Naya berjalan ke cermin lalu berbalik di ±21 dtk (animasi putar), pantulan ikut berbalik, Naya villain di cermin bertanduk iblis.",
+   "output_final": "projects/aku-bisa-jadi-villain/v2/04-Hasil/Aku-Bisa-Jadi-Villain-v2-SFX.mp4",
+   "thumbnail": "projects/aku-bisa-jadi-villain/v2/04-Hasil/Thumbnail-Villain-v2-pose.png",
+   "thumbnail_alternatif": "projects/aku-bisa-jadi-villain/v2/04-Hasil/Thumbnail-Villain-v2-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/hari-pertama-kerja/v1/Hari-Pertama-Kerja-v1 (2026-11-13)"
+  },
+  {
+   "project": "tangan-kosong-pertolongan",
+   "version": "v3",
+   "root": "projects/tangan-kosong-pertolongan/v3",
+   "film": "projects/tangan-kosong-pertolongan/v3/src/Film.tsx",
+   "output": "projects/tangan-kosong-pertolongan/v3/04-Hasil/Tangan-Kosong-v3.mp4",
+   "lock": "projects/tangan-kosong-pertolongan/v3/04-Hasil/Tangan-Kosong-v3.lock.json",
+   "rendered": "2026-11-12T09:29:14.045Z",
+   "status": "disetujui pengguna 12 Nov 2026 (\"Setujui video\"); disalin ke siap-unggah/tangan-kosong-pertolongan (belum terunggah). v3 = Tangan Kosong di panggung flat 2D + cahaya 2D, lokasi kamar-kerja-2d/v1; storyboard v3 disetujui 12 Nov 2026.",
+   "output_final": "projects/tangan-kosong-pertolongan/v3/04-Hasil/Tangan-Kosong-v3-SFX.mp4",
+   "thumbnail": "projects/tangan-kosong-pertolongan/v3/04-Hasil/Thumbnail-Tangan-Kosong-v3-pose.png",
+   "thumbnail_alternatif": "projects/tangan-kosong-pertolongan/v3/04-Hasil/Thumbnail-Tangan-Kosong-v3-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/aku-bisa-jadi-villain/v2/Aku-Bisa-Jadi-Villain-v2 (2026-11-12)"
+  },
+  {
+   "project": "kritik-bukan-utang-jasa",
+   "version": "v5",
+   "root": "projects/kritik-bukan-utang-jasa/v5",
+   "film": "projects/kritik-bukan-utang-jasa/v5/src/Film.tsx",
+   "output": "projects/kritik-bukan-utang-jasa/v5/04-Hasil/Kritik-Bukan-Utang-Jasa-v5.mp4",
+   "lock": "projects/kritik-bukan-utang-jasa/v5/04-Hasil/Kritik-Bukan-Utang-Jasa-v5.lock.json",
+   "rendered": "2026-11-12T06:44:54.020Z",
+   "status": "disetujui pengguna 12 Nov 2026 (\"setuju\"); disalin ke siap-unggah/kritik-bukan-utang-jasa (menggantikan v2, belum terunggah). v5 = panggung flat 2D + cahaya 2D, langkah kaki ikut jarak tempuh, bubble menempel di kepala, overlay sejajar tepi subtitle, Outro C v3.",
+   "output_final": "projects/kritik-bukan-utang-jasa/v5/04-Hasil/Kritik-Bukan-Utang-Jasa-v5-SFX.mp4",
+   "thumbnail": "projects/kritik-bukan-utang-jasa/v5/04-Hasil/Thumbnail-Kritik-v5-pose.png",
+   "thumbnail_alternatif": "projects/kritik-bukan-utang-jasa/v5/04-Hasil/Thumbnail-Kritik-v5-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/tangan-kosong-pertolongan/v3/Tangan-Kosong-v3 (2026-11-12)"
+  },
+  {
+   "project": "kritik-bukan-utang-jasa",
+   "version": "v2",
+   "root": "projects/kritik-bukan-utang-jasa/v2",
+   "film": "projects/kritik-bukan-utang-jasa/v2/src/Film.tsx",
+   "output": "projects/kritik-bukan-utang-jasa/v2/04-Hasil/Kritik-Bukan-Utang-Jasa-v2.mp4",
+   "lock": "projects/kritik-bukan-utang-jasa/v2/04-Hasil/Kritik-Bukan-Utang-Jasa-v2.lock.json",
+   "rendered": "2026-11-10T16:01:51.946Z",
+   "status": "disetujui pengguna 2026-11-10 23:08 WIB (chat: \"Setujui video\"); final = 04-Hasil/Kritik-Bukan-Utang-Jasa-v2-SFX.mp4; siap-unggah/kritik-bukan-utang-jasa/",
+   "output_final": "projects/kritik-bukan-utang-jasa/v2/04-Hasil/Kritik-Bukan-Utang-Jasa-v2-SFX.mp4",
+   "thumbnail": "projects/kritik-bukan-utang-jasa/v2/04-Hasil/Thumbnail-Kritik-v2-pose.png",
+   "thumbnail_alternatif": "projects/kritik-bukan-utang-jasa/v2/04-Hasil/Thumbnail-Kritik-v2-wajah.png",
+   "note": "dipindah otomatis dari \"active\" saat render projects/kritik-bukan-utang-jasa/v3/Kritik-Bukan-Utang-Jasa-v3 (2026-11-11)"
+  },
+  {
+   "project": "anak-kecil-tepuk-tangan",
+   "version": "v1",
+   "root": "projects/anak-kecil-tepuk-tangan/v1",
+   "film": "projects/anak-kecil-tepuk-tangan/v1/src/Film.tsx",
+   "output": "projects/anak-kecil-tepuk-tangan/v1/04-Hasil/Open-Mic-2-Tepuk-Tangan-v1-rev2-final.mp4",
+   "output_sfx_sebelum_koreksi_puncak": "projects/anak-kecil-tepuk-tangan/v1/04-Hasil/Open-Mic-2-Tepuk-Tangan-v1-rev2-SFX.mp4",
+   "output_tanpa_sfx": "projects/anak-kecil-tepuk-tangan/v1/04-Hasil/Open-Mic-2-Tepuk-Tangan-v1-rev2.mp4",
+   "lock": "projects/anak-kecil-tepuk-tangan/v1/04-Hasil/Open-Mic-2-Tepuk-Tangan-v1-rev2.lock.json",
+   "thumbnail": "projects/anak-kecil-tepuk-tangan/v1/04-Hasil/Thumbnail-Tepuk-Tangan-pose.png",
+   "thumbnail_alternatif": "projects/anak-kecil-tepuk-tangan/v1/04-Hasil/Thumbnail-Tepuk-Tangan-wajah.png",
+   "rendered": "2026-11-09T10:58:44.257Z",
+   "status": "disetujui pengguna 9 Nov 2026 18.09 WIB (tombol \"Setujui\" di dashboard; video v1 rev2); siap-unggah/yang-tepuk-tangan-buat-aku. Rev2: shot 18 sudut atas (TopView v1 menggambar gelas di tangan Yan) diganti sayap panggung, atas catatan pengguna 9 Nov 2026 17.53 WIB; audio sama. Final = -SFX dengan volume -0,9 dB (-14,8 LUFS, puncak -1,0 dBTP).",
+   "note": "dipindah otomatis dari \"active\" saat render projects/kritik-bukan-utang-jasa/v2/Kritik-Bukan-Utang-Jasa-v2 (2026-11-10)"
+  },
+  {
+   "project": "hadiah-kecil-diingat",
+   "version": "v1",
+   "root": "projects/hadiah-kecil-diingat/v1",
+   "film": "projects/hadiah-kecil-diingat/v1/src/Film.tsx",
+   "output": "projects/hadiah-kecil-diingat/v1/04-Hasil/Hadiah-Kecil-v1-rev4-SFX.mp4",
+   "output_tanpa_sfx": "projects/hadiah-kecil-diingat/v1/04-Hasil/Hadiah-Kecil-v1-rev4.mp4",
+   "lock": "projects/hadiah-kecil-diingat/v1/04-Hasil/Hadiah-Kecil-v1-rev4.lock.json",
+   "thumbnail": "projects/hadiah-kecil-diingat/v1/04-Hasil/Thumbnail-Hadiah-Kecil-pose.png",
+   "rendered": "2026-11-09T06:19:24.096Z",
+   "status": "disetujui pengguna 9 Nov 2026 13.25 WIB (tombol \"Setujui\" di dashboard; video rev4, durasi 84 dtk diterima apa adanya); siap-unggah/hadiah-kecil-kenapa-bisa-bikin-terharu",
+   "note": "dipindah otomatis dari \"active\" saat render projects/anak-kecil-tepuk-tangan/v1/Open-Mic-2-Tepuk-Tangan-v1 (2026-11-09)"
+  },
+  {
+   "project": "lirik-the-cure",
+   "version": "v5",
+   "root": "projects/lirik-the-cure/v5",
+   "film": "projects/lirik-the-cure/v5/src/Film.tsx",
+   "output": "projects/lirik-the-cure/v5/04-Hasil/The-Cure-Lirik-v5.mp4",
+   "lock": "projects/lirik-the-cure/v5/04-Hasil/The-Cure-Lirik-v5.lock.json",
+   "rendered": "2026-11-07T18:30:16.828Z",
+   "status": "disetujui pengguna 8 Nov 2026 (\"Setuju, salin\"); siap-unggah/lirik-the-cure",
+   "note": "dipindah otomatis dari \"active\" saat render projects/hadiah-kecil-diingat/v1/Hadiah-Kecil-v1 (2026-11-09)"
+  },
+  {
+   "project": "maaf-tanpa-kata",
+   "version": "v3",
+   "date": "2026-11-07",
+   "output": "projects/maaf-tanpa-kata/v3/04-Hasil/Maaf-yang-Nggak-Pernah-Diucapin-v3-SFX.mp4",
+   "lock": "projects/maaf-tanpa-kata/v3/04-Hasil/Maaf-yang-Nggak-Pernah-Diucapin-v3.lock.json",
+   "thumbnail": "projects/maaf-tanpa-kata/v3/04-Hasil/Thumbnail-Maaf-v3-pose.png",
+   "status": "disetujui pengguna 7 Nov 2026 (\"Oke\", video v3 narasi eleven_v4); siap-unggah/maaf-yang-nggak-pernah-diucapin",
+   "note": "Dipulihkan 8 Nov 2026: catatan ini tertimpa saat render seri Lirik (render-film.cjs dulu menimpa 'active' tanpa memindahkan yang disetujui). Output = file -SFX, sha256 sama dengan siap-unggah/maaf-yang-nggak-pernah-diucapin/video.mp4."
+  },
+  {
+   "project": "syarat-protes-struk-kopi",
+   "version": "v5 (folder tanpa vN)",
+   "date": "2026-11-07",
+   "output": "projects/syarat-protes-struk-kopi/04-Hasil/Syarat-Protes-Struk-Kopi.mp4",
+   "lock": "projects/syarat-protes-struk-kopi/04-Hasil/Syarat-Protes-Struk-Kopi.lock.json",
+   "thumbnail": "projects/syarat-protes-struk-kopi/04-Hasil/Thumbnail-Syarat-Protes-pose.png",
+   "note": "Thumbnail pose dan wajah sudah ada (dengan lock). Belum disalin ke siap-unggah/."
+  },
+  {
+   "project": "kurang-yakin-bukan-kurang-tahu",
+   "version": "v7",
+   "date": "2026-11-06",
+   "output": "projects/kurang-yakin-bukan-kurang-tahu/v7/04-Hasil/Kurang-Yakin-Bukan-Kurang-Tahu-SFX.mp4",
+   "thumbnail": "projects/kurang-yakin-bukan-kurang-tahu/v7/04-Hasil/Thumbnail-Kurang-Yakin.png",
+   "note": "Acuan gaya; format proyek lama (scripts/render7.cjs)."
+  },
+  {
+   "project": "tangan-kosong-pertolongan",
+   "version": "v1",
+   "date": "2026-11-03",
+   "feedback": "yang video terakhir oke ya"
+  }
+ ],
+ "superseded": [
+  {
+   "project": "maaf-tanpa-kata",
+   "version": "v1",
+   "note": "Dirender 7 Nov 07:15, digantikan v2. File shared yang dipakainya sudah berubah, jadi tidak bisa dirender ulang persis."
+  }
+ ],
+ "brand": {
+  "social_profiles": "brand/social-profiles/v2 (disetujui 6 Nov 2026)"
+ },
+ "creative_contract": "CREATIVE-BRIEF.md",
+ "voice_profiles": "VOICE-PROFILES.json"
+}

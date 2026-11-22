@@ -1,0 +1,18 @@
+{
+  "status": "candidate-awaiting-user-review",
+  "source": "projects/kurang-yakin-bukan-kurang-tahu/v2/src/World.tsx",
+  "portable": false,
+  "scenes": [
+    "lounge",
+    "home-b",
+    "door",
+    "desk",
+    "street"
+  ],
+  "dependencies": [
+    "Character.tsx",
+    "Elements.tsx",
+    "ReadingWorld.tsx"
+  ],
+  "notes": "Story-bound source snapshot; shared rig/props remain referenced in project. Extract/validate before standalone reuse. Reuse location design, not old footage."
+}

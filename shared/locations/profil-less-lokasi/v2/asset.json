@@ -1,0 +1,33 @@
+{
+  "status": "candidate-awaiting-user-review",
+  "source": "projects/kurang-yakin-bukan-kurang-tahu/v3/src/World.tsx",
+  "portable": false,
+  "scenes": [
+    "lounge",
+    "home-b-yard",
+    "reading-stage",
+    "door",
+    "wall-calendar-workspace",
+    "street"
+  ],
+  "notes": "Story-bound snapshot. ReadingStage depends on ReadingWorld Environment, Character, Elements and brand-data in source project. Preserve actor/prop anchors and use new staging for new stories.",
+  "anchors": {
+    "door_grip": [
+      955,
+      1300
+    ],
+    "wall_calendar": [
+      650,
+      970
+    ],
+    "naya_window": [
+      1740,
+      1740
+    ],
+    "notebook_window": [
+      1790,
+      1320
+    ],
+    "chair_seat_y": 1455
+  }
+}

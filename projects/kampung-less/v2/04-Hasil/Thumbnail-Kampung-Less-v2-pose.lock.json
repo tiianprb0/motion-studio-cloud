@@ -1,0 +1,23 @@
+{
+ "project": "projects/kampung-less/v2",
+ "video": "Thumbnail-Kampung-Less-v2-pose.png",
+ "created": "2026-11-17T13:45:35.886Z",
+ "files": {
+  "projects/kampung-less/v2/src/Thumb.tsx": "d6c1945b9da371185a547b39202624a71f8e78d9eb92a7b20fb98bd7dd361b58",
+  "shared/assets/brand-data/v1.ts": "3a617670a9c28d5c32c252d96ced6af29dc079d29e35044e55a3b91d56447ff9",
+  "shared/assets/font-data/v1.ts": "ac718591ce9ec43a1b37e3f0a00dda01c91b8df8095b54ea55e3added63de920",
+  "shared/characters/rig/v2/Character.tsx": "500d50ee0326976d1bc1022bcce979ae40ad87630cf83f14ffe5abd3c836e3dd",
+  "shared/characters/rig/v2/ExtraFace.tsx": "4651e808fa4cc0d49c4414befd13466519bc471af69192e753f4c7db797e2ee2",
+  "shared/characters/rig/v2/ReferenceFace.tsx": "c24b8111181af047bc1012383788b4896b683572fc3c4ba2f66bac1cc5521547",
+  "shared/characters/rig/v2/brand-data.ts": "1d63f5d7776021c230d6bce2e27fddaac1ff03202460baeefb0ce5d673c6d431",
+  "shared/characters/rig/v2/fx.tsx": "f0239e7528bf8678a32d015198cdc62234c7cd1fe95dec59339fe8451ea57be3",
+  "shared/characters/rig/v2/poses.ts": "4880cfee07b6b7b348d9439d42a27c81c89a078ab96d3a5af20fe36640e60fe5",
+  "shared/core/v1/core.ts": "b113088bde26534e63244b79dd81ec97bf3c8c244f59532e17ff851e7b70b26e",
+  "shared/film/v1/Cahaya2D.tsx": "3f4598624d74a469579fe108e1d9bae9ebf62b500bc890f30747dd457f6f5a85",
+  "shared/film/v1/Depth.tsx": "268c542aabb15ed2ecee912f82bd88a7388d2f90495792d220e7d20edf3d18fa",
+  "shared/locations/_detail/v1/Detail.tsx": "4b71f4018f10e094af2240b6207214273355afb195f7909d0176b30d3920a538",
+  "shared/locations/kampung-less-2d/v1/KampungLess2D.tsx": "982f3e8ce39b4a60dd10ab4196f3fc80598df11c79a9176050ef6f3c413ea861",
+  "shared/props/lampion/v1/Lampion.tsx": "9a9e5d22c7b3ba7a4c982818b6f44b93cde208598445edd3874ff1fd6cda8b83",
+  "shared/ui/v2/Thumb.tsx": "a8acc8f362e0f4fcd7f80ebe358d1f05207f10973889d0aa2a6c6dffbf85e0f3"
+ }
+}

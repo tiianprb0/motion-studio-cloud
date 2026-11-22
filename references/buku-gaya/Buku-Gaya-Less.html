@@ -1,0 +1,1204 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<title>less.certain — Buku Gaya Produksi</title>
+<style>
+  :root { --paper:#F7F0E4; --cream:#FFF9EF; --ink:#283D36; --wine:#8B4354; --sage:#95B8A2; --gold:#D1A258; --mute:#5E6B64; }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); font-family: Lato, sans-serif; font-size: 9.4pt; line-height: 1.42; }
+  .page { width: 210mm; height: 297mm; padding: 14mm 15mm 13mm; position: relative; overflow: hidden; page-break-after: always; background: var(--paper); }
+  .page:last-child { page-break-after: auto; }
+  .kicker { font-weight: 900; font-size: 7.4pt; letter-spacing: .18em; color: var(--wine); text-transform: uppercase; margin-bottom: 1.5mm; }
+  h1 { font-family: Playfair, serif; font-weight: 400; font-size: 23pt; line-height: 1.1; margin: 0 0 2.5mm; letter-spacing: -.02em; }
+  h2 { font-weight: 900; font-size: 10.6pt; margin: 3.5mm 0 1.4mm; }
+  p { margin: 0 0 1.8mm; }
+  .lead { font-size: 10.2pt; color: var(--mute); margin-bottom: 3.5mm; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4mm; }
+  .grid3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 3.5mm; }
+  .grid4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; }
+  .g64 { display: grid; grid-template-columns: 1.15fr 1fr; gap: 5mm; align-items: start; }
+  .card { background: var(--cream); border-radius: 3mm; padding: 3.6mm 4.2mm; }
+  .card h2 { margin-top: 0; }
+  .call { background: #F2E2C7; border-left: 1.4mm solid var(--gold); border-radius: 2mm; padding: 2.8mm 3.8mm; margin: 2.5mm 0; }
+  .call.wine { background: #F1DDE0; border-color: var(--wine); }
+  .call.sage { background: #E3EDE5; border-color: var(--sage); }
+  table { width: 100%; border-collapse: collapse; font-size: 8.6pt; margin: 1.2mm 0 2.8mm; }
+  th { text-align: left; font-size: 7pt; letter-spacing: .12em; text-transform: uppercase; color: var(--mute); border-bottom: .4mm solid var(--ink); padding: 1.4mm 2mm 1.4mm 0; }
+  td { border-bottom: .2mm solid #D9CDB8; padding: 1.4mm 2mm 1.4mm 0; vertical-align: top; }
+  td:first-child { font-weight: 900; }
+  ul { margin: 0 0 1.8mm; padding-left: 4.5mm; }
+  li { margin-bottom: .7mm; }
+  .ok li::marker { content: '✓  '; color: #4E8A62; font-weight: 900; }
+  .no li::marker { content: '✕  '; color: var(--wine); font-weight: 900; }
+  .foot { position: absolute; bottom: 7mm; left: 15mm; right: 15mm; display: flex; justify-content: space-between; font-size: 7pt; letter-spacing: .14em; color: var(--mute); text-transform: uppercase; }
+  .img { width: 100%; border-radius: 2.5mm; display: block; }
+  .cap { font-size: 7.4pt; color: var(--mute); margin-top: 1mm; line-height: 1.3; }
+  .sw { display: flex; gap: 2.5mm; margin: 2mm 0 3mm; }
+  .sw div { flex: 1; border-radius: 2mm; height: 14mm; display: flex; align-items: flex-end; padding: 1.5mm; font-size: 6.8pt; font-weight: 700; }
+  .q { font-family: Playfair, serif; font-size: 13pt; line-height: 1.3; }
+  .tag { display: inline-block; background: var(--ink); color: var(--cream); font-weight: 900; font-size: 7pt; letter-spacing: .1em; border-radius: 10mm; padding: .6mm 2.4mm; margin-right: 1mm; }
+  .blank td { height: 9mm; }
+  .blank td:first-child { width: 50mm; }
+  .mono { font-family: Menlo, monospace; font-size: 7.8pt; line-height: 1.5; }
+  .cover { background: var(--ink); color: var(--cream); display: flex; flex-direction: column; justify-content: space-between; padding: 22mm 18mm 18mm; }
+  .cover .word { font-family: Playfair, serif; font-size: 56pt; letter-spacing: -.03em; line-height: 1; }
+  .cover .line { width: 70mm; height: 1.4mm; background: var(--gold); border-radius: 1mm; margin: 5mm 0 8mm; }
+  .toc td { font-weight: 400; padding: 1.2mm 0; }
+  .toc td:first-child { width: 10mm; color: var(--wine); font-weight: 900; }
+</style>
+</head>
+<body>
+
+<!-- SAMPUL -->
+<section class="page cover">
+  <div class="kicker" style="color:var(--gold)">Buku gaya produksi · v1.2 · 7 November 2026</div>
+  <div>
+    <div class="word">less.certain</div>
+    <div class="line"></div>
+    <div class="q" style="font-size:16pt;max-width:155mm">Panduan lengkap supaya setiap video Less. punya rasa yang sama: tokoh, ekspresi, pose, dunia, kamera, bubble, cara bertutur, stand-up, suara, penutup, cover, sampai kemasan siap unggah.</div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:6mm;font-size:9pt;opacity:.9">
+    <div>Look closer. Think deeper.<br>Stay less certain.</div>
+    <div style="text-align:right">Buku ini adalah ringkasan. Kalau ada arahan baru dari pemilik akun, arahan itu yang berlaku.</div>
+  </div>
+</section>
+
+<!-- DAFTAR ISI + INTI -->
+<section class="page">
+  <div class="kicker">Mulai dari sini</div>
+  <h1>Inti format dalam satu halaman</h1>
+  <p class="lead">Less. adalah video animasi vertikal pendek tentang perilaku, hubungan, dan kebiasaan sosial. Tujuannya bukan memberi vonis, tapi membuka konteks yang jarang terlihat. Memahami bukan membenarkan.</p>
+  <div class="call"><b>Rumus satu kalimat.</b> Naya atau Yan menghadapi satu situasi sehari-hari yang biasanya langsung dinilai. Lalu konteks yang jarang terlihat dibuka, dan video ditutup dengan pertanyaan yang tertinggal di kepala penonton.</div>
+  <div class="grid2">
+    <div class="card">
+      <h2>Rasa yang harus selalu ada</h2>
+      <ul>
+        <li>Hangat dan tenang; kritis tapi tidak agresif.</li>
+        <li>Humor situasional atau menertawakan diri sendiri; tidak ada yang dipermalukan.</li>
+        <li>Dunia Indonesia nyata yang kaya detail.</li>
+        <li>Satu momen "oh ternyata": kagum atau terkejut, bukan marah.</li>
+        <li>Penonton boleh tidak setuju; yang penting ada yang layak dipikirkan.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Format teknis</h2>
+      <ul>
+        <li>Vertikal 9:16, 1080×1920, 30 fps.</li>
+        <li>Reguler 61–75 detik (±145–175 kata); Open Mic di bawah 90 detik.</li>
+        <li>Satu narator per video; suara AI ElevenLabs model v4.</li>
+        <li>Tanpa musik; efek pop dan slide; volume −14 LUFS.</li>
+        <li>Penutup: kartu brand 3 detik di atas adegan terakhir.</li>
+      </ul>
+    </div>
+  </div>
+  <h2>Isi buku</h2>
+  <table class="toc">
+    <tr><td>01</td><td>Tokoh utama: Naya dan Yan</td><td>11</td><td>Struktur naskah 61–75 detik</td></tr>
+    <tr><td>02</td><td>Ekspresi dan efek wajah</td><td>12</td><td>Rumus hook dan penutup</td></tr>
+    <tr><td>03</td><td>Pustaka pose dan cara memegang benda</td><td>13</td><td>Seri Open Mic</td></tr>
+    <tr><td>04</td><td>Extras, keluarga, penonton</td><td>14</td><td>Kamera stand-up</td></tr>
+    <tr><td>05</td><td>Kucing oranye</td><td>15</td><td>Batas aman satire</td></tr>
+    <tr><td>06</td><td>Dunia dan lokasi</td><td>16</td><td>Suara dan audio</td></tr>
+    <tr><td>07</td><td>Gaya visual, warna, kedalaman</td><td>17</td><td>Penutup dan CTA</td></tr>
+    <tr><td>08</td><td>Kamera video reguler</td><td>18</td><td>Cover dan thumbnail</td></tr>
+    <tr><td>09</td><td>Bubble dan efek layar</td><td>19</td><td>Alur produksi</td></tr>
+    <tr><td>10</td><td>Subtitle</td><td>20</td><td>Kemasan dan unggah</td></tr>
+    <tr><td>T</td><td>Bagian teknis: blueprint, warna, rig, layar, waktu, storyboard</td><td>T7</td><td>Contoh prompt untuk agent AI</td></tr>
+    <tr><td>L</td><td>Lampiran: lembar ide, contoh terisi, checklist</td><td></td><td></td></tr>
+  </table>
+  <div class="foot"><span>less.certain · buku gaya</span><span>2</span></div>
+</section>
+
+<!-- 01 TOKOH -->
+<section class="page">
+  <div class="kicker">01 · Tokoh utama</div>
+  <h1>Naya dan Yan</h1>
+  <div class="g64">
+    <div>
+      <img class="img" src="gambar/tokoh.jpg">
+      <div class="cap">Tampak depan dan 3/4, enam ekspresi, dan efek wajah. Bentuk wajah, rambut, baju, dan proporsi tidak pernah didesain ulang.</div>
+    </div>
+    <div>
+      <div class="card">
+        <h2>Naya</h2>
+        <p><b>Sifat:</b> penasaran, suka memberi contoh, gampang kesal.</p>
+        <p><b>Penampilan:</b> rambut bob cokelat tua, kaus rajut peach bertulisan less.certain, rok sage, sepatu hijau.</p>
+        <p><b>Peran:</b> pencerita "aku" untuk cerita hubungan; ekspresinya paling lebar (kesal ↔ hangat).</p>
+        <p><b>Suara:</b> Leya, hangat dan sedikit kesal di awal cerita.</p>
+      </div>
+      <div class="card" style="margin-top:3mm">
+        <h2>Yan</h2>
+        <p><b>Sifat:</b> tenang, suka belajar, pendiam, sedikit pemalu.</p>
+        <p><b>Penampilan:</b> rambut hitam pendek, kemeja polo sage, celana pendek peach.</p>
+        <p><b>Peran:</b> narator reflektif; pasangan Naya di cerita hubungan; komika di seri Open Mic.</p>
+        <p><b>Suara:</b> Ibnu, tenang tapi ekspresif.</p>
+      </div>
+      <div class="call sage" style="margin-top:3mm"><b>Akting berbeda.</b> Naya bereaksi cepat dan besar; Yan menunda, melirik ke bawah, tersipu. Jangan beri keduanya ekspresi yang sama sepanjang video.</div>
+    </div>
+  </div>
+  <h2>Aturan tokoh</h2>
+  <div class="grid2">
+    <ul class="ok">
+      <li>Satu narator per video; tokoh lain tidak ikut bicara sebagai voice-over.</li>
+      <li>Ekspresi mengikuti adegan; ada antisipasi sebelum aksi.</li>
+      <li>Mata dan tubuh hidup: kedip acak, napas, lirikan, kepala ikut arah pandang.</li>
+      <li>Tampak 3/4 sebagai sudut utama; ubah sudut kamera, bukan memutar badan ke belakang.</li>
+    </ul>
+    <ul class="no">
+      <li>Tampak belakang penuh.</li>
+      <li>Skala tokoh di layar lebih dari 4,6× (ganti framing, jangan perbesar).</li>
+      <li>Menunjuk atau acungan jempol (tangan belum punya bentuk itu).</li>
+      <li>Logo, karakter, atau gaya baru tanpa persetujuan.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>3</span></div>
+</section>
+
+<!-- 02 EKSPRESI -->
+<section class="page">
+  <div class="kicker">02 · Ekspresi dan efek wajah</div>
+  <h1>Enam suasana hati</h1>
+  <p class="lead">Setiap kalimat narasi memakai satu suasana hati yang paling cocok. Ganti ekspresi di titik yang bermakna, bukan acak.</p>
+  <table>
+    <tr><th>Mood</th><th>Wajah</th><th>Dipakai saat</th><th>Contoh kalimat</th></tr>
+    <tr><td>soft</td><td>senyum kecil, mata tenang</td><td>netral, bercerita santai</td><td>"Pacarku punya satu kebiasaan…"</td></tr>
+    <tr><td>warm</td><td>senyum lebar, pipi merona</td><td>lega, sayang, rekonsiliasi</td><td>"Makasih, ya."</td></tr>
+    <tr><td>annoyed</td><td>alis turun, mulut datar</td><td>kesal, menegur, marah</td><td>"Dia cuma diam."</td></tr>
+    <tr><td>hurt</td><td>alis naik di tengah, mulut turun</td><td>sedih, kecewa, dimarahi</td><td>"Habis bapaknya marah besar,"</td></tr>
+    <tr><td>thinking</td><td>pandangan ke atas/samping</td><td>merenung, mencari jawaban</td><td>"Awalnya aku pikir…"</td></tr>
+    <tr><td>unsure</td><td>alis bimbang, mulut miring</td><td>canggung, ragu, malu</td><td>Yan menyodorkan es teh</td></tr>
+  </table>
+  <div class="grid2">
+    <div class="card">
+      <h2>Efek wajah</h2>
+      <ul>
+        <li><b>Wajah memerah</b> dari dahi (gradasi), hanya untuk momen emosi: malu, marah, kewalahan.</li>
+        <li><b>Tetes keringat</b> untuk canggung atau gugup.</li>
+        <li><b>Lirikan</b> (arah pupil) menunjuk lawan bicara, benda, atau kamera.</li>
+        <li><b>Bicara</b>: mulut bergerak hanya untuk tokoh yang sedang mengucapkan bubble.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Menatap kamera</h2>
+      <p>Naya atau Yan menatap kamera hanya di dua tempat: <b>hook</b> (pengakuan ke penonton) dan <b>pertanyaan penutup</b>. Di luar itu, tokoh melihat lawan bicara atau dunia ceritanya.</p>
+      <h2>Satu efek per kalimat</h2>
+      <p>Maksimal satu efek ekspresi per kalimat. Setiap efek menjawab: apa yang dirasakan tokoh di kalimat ini?</p>
+    </div>
+  </div>
+  <div class="call wine"><b>Mode dramatis</b> (cahaya hangat + bayangan volume + latar gelap, untuk emosi sangat kuat) masih kandidat. Jangan dipakai sampai lembar contohnya disetujui.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>4</span></div>
+</section>
+
+<!-- 03 POSE -->
+<section class="page">
+  <div class="kicker">03 · Pustaka pose</div>
+  <h1>Pose yang boleh dipakai</h1>
+  <div class="g64">
+    <div><img class="img" src="gambar/pose.jpg"><div class="cap">Semua pose yang sudah disetujui. Pose baru adalah kandidat dan harus ditunjukkan dulu.</div></div>
+    <div>
+      <table>
+        <tr><th>Pose</th><th>Arti / dipakai saat</th></tr>
+        <tr><td>santai</td><td>berdiri atau duduk netral; pose dasar</td></tr>
+        <tr><td>melambai</td><td>menyapa, memanggil, "di sini!"</td></tr>
+        <tr><td>pinggang</td><td>kesal, menegur, menunggu tidak sabar</td></tr>
+        <tr><td>bertaut</td><td>gugup, menahan diri, canggung, mendengarkan</td></tr>
+        <tr><td>berpikir</td><td>tangan di dagu, merenung (Naya)</td></tr>
+        <tr><td>pegangDepanDada</td><td>memegang HP, gelas, struk di depan dada</td></tr>
+        <tr><td>sodorKiri</td><td>menyodorkan benda kecil saat duduk (Yan)</td></tr>
+        <tr><td>angkatGalon</td><td>membawa benda besar dua tangan: kotak, kardus</td></tr>
+      </table>
+      <h2>Memegang benda</h2>
+      <ul>
+        <li>Benda digambar di titik genggam tangan; tangan menjepit tepi benda, bukan menutupi tulisannya.</li>
+        <li>Benda besar ada di antara dua tangan; tangan tertutup sebagian oleh benda.</li>
+        <li>HP yang dipegang menghadap kamera = punggung HP, bukan layar.</li>
+        <li>Periksa tangan, siku, dan benda di crop 100%.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="grid2" style="margin-top:2mm">
+    <ul class="ok">
+      <li>Gestur yang jelas terbaca: melambai, santai, pinggang, bertaut, berpikir, memegang di depan dada.</li>
+      <li>Aksi memperlihatkan kata kerja narasi ("beliin makanan" → kantong dipegang).</li>
+    </ul>
+    <ul class="no">
+      <li>Koordinat tangan dikarang di luar pustaka.</li>
+      <li>Siku di atas bahu, lengan menyilang badan mendatar, tangan menempel aneh di perut.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>5</span></div>
+</section>
+
+<!-- 04 EXTRAS -->
+<section class="page">
+  <div class="kicker">04 · Extras, keluarga, penonton</div>
+  <h1>Tokoh pendukung</h1>
+  <div class="g64">
+    <div><img class="img" src="gambar/extras.jpg"><div class="cap">Extras dengan wajah dan baju berbeda; keluarga kilas balik; kerumunan latar.</div></div>
+    <div>
+      <div class="card">
+        <h2>Extras</h2>
+        <ul>
+          <li>Memakai rig yang sama tetapi wajah, rambut, kacamata, dan warna baju berbeda dari Naya dan Yan.</li>
+          <li>Jenis kelamin harus terbaca jelas.</li>
+          <li>Warna baju dari palet hangat: bata, mustard, biru kelabu, sage, cokelat muda.</li>
+          <li>Ekspresi lebih kecil dari tokoh utama; mereka tidak mencuri fokus.</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:3mm">
+        <h2>Keluarga di kilas balik</h2>
+        <ul>
+          <li>Bapak: kemeja biru kelabu, berkacamata. Ibu: baju cokelat muda.</li>
+          <li>Yan kecil: tokoh anak, skala ±0,7 dari dewasa.</li>
+          <li>Seluruh adegan kilas balik diberi warna sepia hangat dan vinyet.</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:3mm">
+        <h2>Kerumunan dan penonton</h2>
+        <ul>
+          <li>Skala kecil di latar; posisi dan pose beragam, tidak berbaris rapi.</li>
+          <li>Isi kerumunan mencerminkan tempatnya (kafe, kampung, jalan).</li>
+          <li>Di Open Mic, penonton depan boleh siluet gelap sebagai latar depan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>6</span></div>
+</section>
+
+<!-- 05 KUCING -->
+<section class="page">
+  <div class="kicker">05 · Kucing oranye</div>
+  <h1>Callback kecil untuk penonton lama</h1>
+  <div class="g64">
+    <div><img class="img" src="gambar/kucing.jpg"></div>
+    <div>
+      <p class="lead">Kucing oranye belang berkalung wine dengan liontin emas. Muncul kecil di latar hampir setiap video, tidak pernah dijelaskan, tidak disebut narasi.</p>
+      <table>
+        <tr><th>Pose</th><th>Gerak</th></tr>
+        <tr><td>duduk</td><td>napas, kedip acak (kadang dua kali), telinga berkedut, ekor mengayun, lirikan</td></tr>
+        <tr><td>tidur</td><td>meringkuk, napas dalam, telinga dan ujung ekor berkedut</td></tr>
+        <tr><td>jalan</td><td>kaki bergantian, badan naik-turun, ekor tegak mengayun</td></tr>
+      </table>
+      <h2>Identitas tetap</h2>
+      <ul>
+        <li>Oranye belang, moncong dan dada krem, mata hijau sage.</li>
+        <li>Belang "M" di dahi, telinga dalam merah muda.</li>
+        <li><b>Kalung wine + liontin emas</b> adalah pembedanya.</li>
+      </ul>
+      <h2>Aturan pakai</h2>
+      <ul>
+        <li>Skala sama dengan tokoh di garis lantai yang sama (duduk ±18% tinggi orang).</li>
+        <li>Satu kucing per shot; kalau lokasi sudah punya kucing lain, jangan ditambah.</li>
+        <li>Tempat yang masuk akal: kasur, pagar, jalur taman, lantai.</li>
+        <li>Tidak menutupi tokoh atau subtitle.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>7</span></div>
+</section>
+
+<!-- 06 LOKASI -->
+<section class="page">
+  <div class="kicker">06 · Dunia dan lokasi</div>
+  <h1>Indonesia yang terasa nyata</h1>
+  <div class="grid3">
+    <div><img class="img" style="height:72mm;object-fit:cover;object-position:top" src="gambar/lok-kedai.jpg"><div class="cap"><b>Kedai kopi malam:</b> jendela berembun dengan hujan dan lampu jalan buram, lampu gantung, papan menu, meja bertaplak, kopi beruap.</div></div>
+    <div><img class="img" style="height:72mm;object-fit:cover;object-position:top" src="gambar/lok-kamar.jpg"><div class="cap"><b>Kamar kos Naya:</b> tirai, lampu tali, polaroid, rak, cahaya pagi/sore/malam, kasur bermotif.</div></div>
+    <div><img class="img" style="height:72mm;object-fit:cover;object-position:top" src="gambar/lok-depankos.jpg"><div class="cap"><b>Depan kos malam:</b> pintu bernomor, pagar besi, lampu jalan dengan kerucut cahaya.</div></div>
+    <div><img class="img" style="height:72mm;object-fit:cover;object-position:top" src="gambar/lok-rumah.jpg"><div class="cap"><b>Rumah masa kecil Yan:</b> wallpaper garis, TV tabung, foto keluarga, jam, kipas, pintu bisa terbuka.</div></div>
+    <div><img class="img" style="height:72mm;object-fit:cover;object-position:top" src="gambar/lok-jendela.jpg"><div class="cap"><b>Deretan jendela kampung:</b> metafora "di banyak rumah"; tiap jendela satu keluarga.</div></div>
+    <div><img class="img" style="height:72mm;object-fit:cover;object-position:top" src="gambar/lok-taman.jpg"><div class="cap"><b>Taman senja:</b> matahari rendah, siluet kota, lampu taman, bangku dengan semak depan.</div></div>
+  </div>
+  <h2>Aturan dunia</h2>
+  <div class="grid2">
+    <ul>
+      <li>Satu dunia untuk satu kesatuan tempat dan waktu: jam, cahaya, dan posisi benda konsisten antar-shot.</li>
+      <li>Setiap lokasi punya 6–8 benda khas, tekstur dinding/lantai, bayangan, dan 3 lapis kedalaman.</li>
+      <li>Lantai, ubin, jalan berbentuk trapesium menuju titik hilang setinggi mata.</li>
+      <li>Langit hidup: awan, burung, layangan, bulan.</li>
+    </ul>
+    <ul>
+      <li>Benda besar ada di tempat yang wajar (motor di jalan, bukan di belakang meja).</li>
+      <li>Benda cocok dengan waktu cerita (tidak ada kalender 2026 di kilas balik masa kecil).</li>
+      <li>Tulisan di satu lokasi menunjukkan satu usaha yang sama.</li>
+      <li>Tokoh duduk tertutup meja, kasur, taplak, atau semak sampai ke lantai.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>8</span></div>
+</section>
+
+<!-- 07 VISUAL -->
+<section class="page">
+  <div class="kicker">07 · Gaya visual</div>
+  <h1>Flat pastel dengan kedalaman</h1>
+  <p class="lead">Bentuk datar tanpa garis tepi tebal, tapi bervolume lewat gradasi, cahaya, dan material. Acuan gaya: kanal Kok Bisa?.</p>
+  <div class="sw">
+    <div style="background:#F7F0E4;border:.2mm solid #D9CDB8">paper #F7F0E4</div>
+    <div style="background:#FFF9EF;border:.2mm solid #D9CDB8">cream #FFF9EF</div>
+    <div style="background:#283D36;color:#FFF9EF">ink #283D36</div>
+    <div style="background:#8B4354;color:#FFF9EF">wine #8B4354</div>
+    <div style="background:#95B8A2">sage #95B8A2</div>
+    <div style="background:#D1A258">gold #D1A258</div>
+    <div style="background:#F2B79B">peach #F2B79B</div>
+  </div>
+  <div class="g64">
+    <div><img class="img" src="gambar/kedalaman.jpg"><div class="cap">Contoh kedalaman dan material: latar buram saat close-up, kaca berpantulan, ubin bergradasi, uap.</div></div>
+    <div>
+      <div class="card">
+        <h2>Kedalaman</h2>
+        <ul>
+          <li>Latar jauh diburamkan saat kamera mendekat.</li>
+          <li>Ada lapisan depan (meja, tanaman, bahu) untuk rasa ruang.</li>
+          <li>Cahaya tepi tipis memisahkan tokoh dari latar.</li>
+        </ul>
+        <h2>Material</h2>
+        <ul>
+          <li>Kaca dengan dua garis pantulan diagonal.</li>
+          <li>Kayu, ubin bergradasi, kilap meja, uap minuman, tirai berlipat.</li>
+        </ul>
+        <h2>Cahaya dan waktu</h2>
+        <ul>
+          <li>Pagi biru-krem, sore oranye, malam biru tua dengan lampu hangat.</li>
+          <li>Cahaya boleh berubah sebagai tanda emosi (senja makin hangat saat "oh ternyata").</li>
+          <li>Kilas balik: sepia hangat + vinyet.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="call"><b>Warna aksen wine</b> dipakai hemat: kata kunci di subtitle, tombol, tanda "!", tirai. Peach dan sage adalah warna tema hubungan dan perilaku.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>9</span></div>
+</section>
+
+<!-- 08 KAMERA REGULER -->
+<section class="page">
+  <div class="kicker">08 · Kamera video reguler</div>
+  <h1>Kamera yang selalu bergerak</h1>
+  <div class="grid4">
+    <div><img class="img" src="gambar/hook.jpg"><div class="cap"><b>Close-up pembuka</b>: tokoh besar, subtitle sejak awal.</div></div>
+    <div><img class="img" src="gambar/kilasbalik.jpg"><div class="cap"><b>Tarik mundur</b>: dari foto keluarga ke ruang tamu.</div></div>
+    <div><img class="img" src="gambar/jendela.jpg"><div class="cap"><b>Zoom out metafora</b>: satu jendela → semua jendela.</div></div>
+    <div><img class="img" src="gambar/ohternyata.jpg"><div class="cap"><b>Dorong masuk</b> + cahaya menghangat saat "oh ternyata".</div></div>
+  </div>
+  <table style="margin-top:3mm">
+    <tr><th>Shot</th><th>Ukuran tokoh</th><th>Dipakai untuk</th></tr>
+    <tr><td>Close-up</td><td>kepala dan bahu (skala layar 2,4–4,6)</td><td>hook, emosi, kalimat kunci, pertanyaan penutup</td></tr>
+    <tr><td>Medium</td><td>pinggang ke atas</td><td>dialog berdua, gestur, memegang benda</td></tr>
+    <tr><td>Lebar</td><td>seluruh badan + lokasi</td><td>memperkenalkan tempat, berjalan, perpindahan</td></tr>
+    <tr><td>Insert</td><td>benda atau layar HP penuh</td><td>pesan masuk, struk, makanan, foto</td></tr>
+  </table>
+  <div class="grid2">
+    <div class="card">
+      <h2>Gerak di setiap shot</h2>
+      <ul>
+        <li>Setiap shot punya gerak: dorong masuk, tarik mundur, geser, atau tokoh berjalan.</li>
+        <li>Satu kalimat, satu perubahan: aksi, kamera, cahaya, atau benda masuk.</li>
+        <li>Waktu diam maksimal 50% (Kok Bisa? 26–38%); tidak ada diam beruntun lebih dari 3 detik.</li>
+        <li>Shot minimal 1,3 detik.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Pembuka dan transisi</h2>
+      <ul>
+        <li>Frame pertama sudah hook: tokoh dalam situasinya, shot sedang/close-up, subtitle tampil dalam 0,3 detik.</li>
+        <li>Tanpa shot lebar kosong atau fade dari hitam.</li>
+        <li>Potongan langsung (cut) jadi pilihan utama; transisi maksimal 0,7 detik, tidak heboh.</li>
+        <li>Masuk/keluar kilas balik: celup ke krem singkat.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>10</span></div>
+</section>
+
+<!-- 09 BUBBLE -->
+<section class="page">
+  <div class="kicker">09 · Bubble dan efek layar</div>
+  <h1>Bubble gaya Kok Bisa?</h1>
+  <div class="g64">
+    <div><img class="img" src="gambar/bubble-aturan.jpg"><div class="cap">Atas: posisi benar dan salah. Bawah: seruan, pikiran, tanda "!" dengan wajah memerah.</div></div>
+    <div>
+      <div class="card">
+        <h2>Bentuk</h2>
+        <ul>
+          <li>Oval krem tanpa garis tepi, bayangan sangat lembut.</li>
+          <li>Ekor pendek melengkung ke kepala atau mulut pembicara.</li>
+          <li>Huruf Lato Black besar, rata tengah, satu baris.</li>
+          <li>Muncul memantul dengan efek "pop"; tampil singkat.</li>
+        </ul>
+        <h2>Isi</h2>
+        <ul>
+          <li><b>Maksimal 4 kata</b>: seruan atau ucapan pendek ("Kamu tuh…!", "Gengsi?", "Lho?", "Makasih, ya.").</li>
+          <li>Kalimat panjang masuk narasi dan subtitle, bukan bubble.</li>
+          <li>Bubble bukan pengganti subtitle.</li>
+        </ul>
+        <h2>Posisi</h2>
+        <ul>
+          <li>Di atas atau samping kepala, <b>tidak pernah menutupi wajah</b> (lebih dari 12% area wajah = ditolak).</li>
+          <li>Di dalam area aman layar; jarak ke subtitle ±100 px.</li>
+          <li>Tidak menutupi tanda lokasi atau benda penting.</li>
+        </ul>
+      </div>
+      <div class="card" style="margin-top:3mm">
+        <h2>Efek layar lain</h2>
+        <ul>
+          <li><b>Tanda "!" / "?"</b> bergerigi warna wine/sage untuk kaget atau bingung.</li>
+          <li><b>Kartu gag</b> (Open Mic): struk, daftar centang, perbandingan harga.</li>
+          <li><b>Label dengan garis penunjuk</b>, layar terbelah, inset untuk penjelasan.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>11</span></div>
+</section>
+
+<!-- 10 SUBTITLE -->
+<section class="page">
+  <div class="kicker">10 · Subtitle</div>
+  <h1>Subtitle per kata</h1>
+  <img class="img" src="gambar/subtitle.jpg" style="width:120mm">
+  <div class="cap">Latar krem per kata, kata kunci berlatar wine.</div>
+  <div class="grid2" style="margin-top:3mm">
+    <div class="card">
+      <h2>Tampilan</h2>
+      <ul>
+        <li>Lato Bold 44 px (pada 1080×1920), warna tinta.</li>
+        <li>Latar krem per kata dengan sudut membulat; kata kunci (misalnya "maaf") latar wine, huruf krem.</li>
+        <li>Rata kiri, kiri atas layar (area aman), di bawah watermark.</li>
+        <li>Muncul halus (geser kecil + memudar), stabil setelah muncul.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Aturan</h2>
+      <ul>
+        <li>Maksimal 7 kata dan 2 baris per kemunculan.</li>
+        <li>Dipecah menurut makna, mengikuti waktu ucapan.</li>
+        <li>Tidak menabrak wajah, aksi, benda penting, atau tombol platform.</li>
+        <li>Bahasa Indonesia; ejaan mengikuti narasi lisan.</li>
+        <li>Penting untuk penonton yang menonton tanpa suara.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="call"><b>Area aman layar (semua teks dan kartu):</b> kiri ≥60 px, atas ≥220 px, kanan ≤920 px, bawah ≤1480 px. Kolom kanan dan bagian bawah tertutup tombol dan caption platform.</div>
+  <div class="call sage"><b>Watermark</b> less.certain kecil di kanan atas selama video; hilang saat kartu penutup muncul.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>12</span></div>
+</section>
+
+<!-- 11 NASKAH -->
+<section class="page">
+  <div class="kicker">11 · Struktur naskah</div>
+  <h1>Kerangka 61–75 detik</h1>
+  <p class="lead">±145–175 kata lisan. Di atas 60 detik karena program bayaran TikTok hanya untuk video lebih dari 1 menit.</p>
+  <table>
+    <tr><th>Detik</th><th>Babak</th><th>Tugasnya</th><th>Aturan</th></tr>
+    <tr><td>0–3</td><td>Hook</td><td>Langsung masuk situasi, memuat kata kunci</td><td>Tanpa salam, tanpa kartu judul</td></tr>
+    <tr><td>3–±15</td><td>Situasi + penilaian</td><td>Situasi akrab dan vonis yang biasa muncul</td><td>Satu konflik saja</td></tr>
+    <tr><td>±15–35</td><td>Konteks</td><td>Contoh konkret, kejadian, kilas balik</td><td>Satu kalimat, satu perubahan</td></tr>
+    <tr><td>55–65%</td><td>"Tapi…" / oh ternyata</td><td>Pembalikan terbesar</td><td>Ditandai perubahan visual</td></tr>
+    <tr><td>lanjut</td><td>Alasan dan bukti</td><td>Pola di luar cerita, riset bersumber, pengamatan jujur</td><td>Bedakan fakta, dugaan, opini</td></tr>
+    <tr><td>akhir</td><td>Penutup</td><td>Pertanyaan atau pengamatan yang tertinggal</td><td>Tanpa kesimpulan moral</td></tr>
+    <tr><td>+3 dtk</td><td>Kartu penutup</td><td>Brand + CTA</td><td>Tanpa ajakan share/tag/komen</td></tr>
+  </table>
+  <div class="grid3">
+    <div class="card"><h2>Tiga varian</h2><p><b>A. Tapi ternyata</b> — perilaku manusia.</p><p><b>B. Cerita lalu mundur</b> — hubungan, "aku".</p><p><b>C. Dua sisi</b> — pengamatan sosial.</p><p>Gilir varian antar-video.</p></div>
+    <div class="card"><h2>Dikirim ke siapa?</h2><p>Tulis satu orang yang paling mungkin dikirimi video ini. Kiriman lahir dari isi, bukan ajakan.</p><p>Emosi yang menyebar: kagum, terkejut (Berger &amp; Milkman 2012). Jangan tutup dengan sedih saja.</p></div>
+    <div class="card"><h2>Gaya bahasa</h2><p>Lisan, sehari-hari ("nggak", "udah"), satu ide per kalimat, contoh konkret. Dugaan ditandai "mungkin". Angka ditulis dengan huruf.</p></div>
+  </div>
+  <div class="grid2" style="margin-top:3mm">
+    <div class="call sage"><b>Lolos kalau…</b><ul style="margin-top:1mm"><li>Bisa diceritakan dalam satu kalimat.</li><li>Hook ≤3 detik dengan kata kunci.</li><li>"Tapi…" di 55–65% durasi.</li><li>Ada momen "oh ternyata".</li><li>Penutup bisa dijawab dalam 1–3 kata.</li></ul></div>
+    <div class="call wine"><b>Ulang kalau…</b><ul style="margin-top:1mm"><li>Butuh "jadi gini ceritanya".</li><li>Ada pihak yang diejek atau dihakimi.</li><li>Ada klaim tanpa sumber.</li><li>Penutupnya moral.</li><li>Durasi di luar 61–75 detik.</li></ul></div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>13</span></div>
+</section>
+
+<!-- 12 HOOK -->
+<section class="page">
+  <div class="kicker">12 · Hook dan penutup</div>
+  <h1>Rumus pembuka dan penutup</h1>
+  <table>
+    <tr><th>#</th><th>Rumus hook</th><th>Bentuk</th><th>Contoh</th></tr>
+    <tr><td>1</td><td>Kalimat yang sering didengar</td><td>"Katanya, …" / kutipan akrab</td><td>"Sok-sokan kritik pemerintah. Emang udah ngasih apa ke negara?"</td></tr>
+    <tr><td>2</td><td>Situasi + penilaian cepat</td><td>situasi singkat lalu vonis</td><td>"Dia telat lagi. Pasti nggak menghargai waktuku."</td></tr>
+    <tr><td>3</td><td>Pengakuan "aku"</td><td>hal pribadi yang sedikit memalukan</td><td>"Pacarku hampir nggak pernah minta maaf."</td></tr>
+    <tr><td>4</td><td>Angka nyata</td><td>angka spesifik, wajib bersumber</td><td>(ditulis dengan huruf)</td></tr>
+    <tr><td>5</td><td>Pertanyaan judul</td><td>pertanyaan yang bikin penasaran</td><td>"Pernah nggak, kamu yakin banget sama penilaianmu…"</td></tr>
+  </table>
+  <h2>Kata kunci pencarian</h2>
+  <p>Satu kata yang diketik orang di pencarian (misalnya "minta maaf"). Muncul alami di hook yang diucapkan, subtitle, baris pertama caption, judul YouTube Shorts, dan satu hashtag.</p>
+  <h2>Bentuk penutup</h2>
+  <table>
+    <tr><th>Varian</th><th>Isi kartu</th><th>Kapan</th></tr>
+    <tr><td>ikuti</td><td>"Ikuti untuk melihat lebih dekat."</td><td>Bawaan</td></tr>
+    <tr><td>tanya</td><td>Pertanyaan tentang penonton sendiri, jawab 1–3 kata: "Kamu tipe yang bilang, atau yang nunjukin?"</td><td>Kalimat penutup narasi = pertanyaan ini; tokoh menatap kamera</td></tr>
+    <tr><td>seri</td><td>"Ikuti seri Open Mic." / "Keresahanmu bisa jadi episode berikutnya."</td><td>Open Mic</td></tr>
+  </table>
+  <div class="call wine"><b>Dihindari:</b> salam pembuka, kartu judul, kalimat yang butuh episode lalu, "setuju nggak?", dan ajakan "share/tag/komen ya". Platform menurunkan jangkauan pancingan seperti itu, termasuk yang diucapkan.</div>
+  <div class="call"><b>Kenapa pertanyaan tentang diri penonton?</b> Orang suka bercerita tentang dirinya sendiri; berbagi informasi tentang diri mengaktifkan sistem penghargaan otak (Tamir &amp; Mitchell 2012).</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>14</span></div>
+</section>
+
+<!-- 13 OPEN MIC -->
+<section class="page">
+  <div class="kicker">13 · Seri Open Mic</div>
+  <h1>Stand-up satire Yan</h1>
+  <div class="call"><b>Rumus satu kalimat.</b> Yan naik panggung open mic kafe membawa satu keresahan sehari-hari. Logika sistemnya dibawa sampai ujung absurdnya dengan nada datar, lalu ditutup callback tajam tanpa ceramah.</div>
+  <div class="grid2">
+    <div class="card">
+      <h2>Penyampaian</h2>
+      <ul>
+        <li>Deadpan sebagai dasar; marah/setengah teriak hanya 1–2 puncak.</li>
+        <li>Punchline tidak lebih keras; penekanan lewat jeda sebelum kata pengejut.</li>
+        <li>Jeda senyap 1,2–1,8 detik sebelum punchline terkuat; lebih pendek untuk punchline kecil.</li>
+        <li>Tidak dipercepat; jeda diatur di penyuntingan.</li>
+        <li>Langsung ke premis; tanpa "Selamat malam!".</li>
+      </ul>
+      <h2>Anatomi bit</h2>
+      <p>Premis (keresahan + sikap) → setup sesingkat mungkin → punchline (kata pengejut di akhir) → tag 1–2 → callback di penutup. Pola bantu: aturan tiga, salah arah (misdirection).</p>
+    </div>
+    <div class="card">
+      <h2>Takaran</h2>
+      <ul>
+        <li>Durasi di bawah 90 detik: satu premis besar, 2–3 bit, satu callback.</li>
+        <li>10–30 kata di antara tawa.</li>
+        <li>Tawa maksimal 10% durasi; senyap ±8–12%.</li>
+        <li>Tawa beragam: kekeh kecil, tawa sedang, maksimal 1–2 tawa besar.</li>
+      </ul>
+      <h2>Suara panggung</h2>
+      <ul>
+        <li>Gumam ruangan sangat pelan + pantulan ruangan kecil di suara Yan.</li>
+        <li>Tawa mulai tepat di ujung punchline; narasi boleh menimpa ekor tawa (tawa diredam).</li>
+        <li>Tepuk tangan di akhir; kartu penutup muncul di atasnya.</li>
+      </ul>
+      <h2>Seri</h2>
+      <p>"Open Mic #N: &lt;judul&gt;"; Syarat Protes = #1. Topik boleh dari komentar, dengan izin komentator dan janji yang ditepati.</p>
+    </div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>15</span></div>
+</section>
+
+<!-- 14 KAMERA STAND-UP -->
+<section class="page">
+  <div class="kicker">14 · Kamera stand-up</div>
+  <h1>Satu panggung, banyak sudut</h1>
+  <p class="lead">Seluruh episode terjadi di satu dunia panggung kafe yang sama. Kamera berpindah sudut mengikuti ritme lelucon, bukan berpindah tempat.</p>
+  <div class="grid4">
+    <div><img class="img" src="gambar/su-lebar.jpg"><div class="cap"><b>Lebar panggung</b>: Yan di bawah lampu sorot, papan OPEN MIC. Untuk pembuka premis.</div></div>
+    <div><img class="img" src="gambar/su-samping.jpg"><div class="cap"><b>Dari samping penonton</b>: siluet kepala penonton di latar depan. Untuk setup.</div></div>
+    <div><img class="img" src="gambar/su-kartu.jpg"><div class="cap"><b>Medium + kartu gag</b>: benda pembuktian (struk) muncul di samping Yan.</div></div>
+    <div><img class="img" src="gambar/su-closeup.jpg"><div class="cap"><b>Close-up</b>: wajah deadpan di kalimat kunci dan punchline.</div></div>
+    <div><img class="img" src="gambar/su-checklist.jpg"><div class="cap"><b>Kartu daftar centang</b>: logika "syarat" dicentang satu per satu.</div></div>
+    <div><img class="img" src="gambar/su-atas.jpg"><div class="cap"><b>Dari atas</b>: Yan dan meja-meja penonton; untuk jeda dan pergantian bit.</div></div>
+    <div><img class="img" src="gambar/su-penonton.jpg"><div class="cap"><b>Reaksi penonton</b>: penonton tertawa di meja; dipakai setelah punchline besar.</div></div>
+    <div><img class="img" src="gambar/thumb-openmic.jpg"><div class="cap"><b>Cover Open Mic</b>: panggung gelap, lampu sorot, mic, struk.</div></div>
+  </div>
+  <h2>Aturan kamera stand-up</h2>
+  <div class="grid2">
+    <ul>
+      <li>Ganti sudut di batas bit atau sebelum punchline; tahan close-up selama jeda sebelum kata pengejut.</li>
+      <li>Shot reaksi penonton tepat saat tawa terdengar, singkat.</li>
+      <li>Kartu gag muncul memantul di area aman, tidak menutupi wajah Yan.</li>
+    </ul>
+    <ul>
+      <li>Lampu sorot, papan OPEN MIC, gorden wine, dan meja penonton konsisten di semua sudut.</li>
+      <li>Yan memegang mic; gestur kecil, wajah datar, sesekali melirik penonton.</li>
+      <li>Penutup: tepuk tangan + kartu penutup varian seri.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>16</span></div>
+</section>
+
+<!-- 15 SATIRE -->
+<section class="page">
+  <div class="kicker">15 · Batas aman satire</div>
+  <h1>Tajam, tapi aman</h1>
+  <p class="lead">Yang disindir adalah logika, sistem, kebiasaan, dan pihak berkuasa. Bukan orang kecil, korban, kelompok rentan, atau identitas. Lelucon harus berdiri di atas fakta yang benar.</p>
+  <table>
+    <tr><th>Boleh</th><th>Jangan</th></tr>
+    <tr><td style="font-weight:400">Menyindir perilaku, sistem, kebijakan, logika</td><td>Menyebut nama, inisial, jabatan spesifik, atau ciri yang membuat tokoh nyata dikenali</td></tr>
+    <tr><td style="font-weight:400">Tokoh fiktif tanpa kemiripan dengan orang nyata</td><td>Kutipan palsu atau tiruan suara tokoh nyata, termasuk dengan AI</td></tr>
+    <tr><td style="font-weight:400">Fakta yang disindir sudah bersumber</td><td>Menuduh orang tertentu melakukan kejahatan</td></tr>
+    <tr><td style="font-weight:400">Komentar penonton dengan izin pemiliknya</td><td>Menggambarkan komentator secara buruk tanpa izin</td></tr>
+    <tr><td style="font-weight:400">Lembaga dan kebijakannya sebagai sasaran kritik</td><td>Lelucon SARA, orientasi seksual, atau fisik seseorang</td></tr>
+  </table>
+  <div class="call wine"><b>Uji tunjuk</b> (sebelum storyboard): kalau orang nyata yang tersindir menonton video ini, bisakah dia menunjuk satu kalimat dan berkata "itu tuduhan ke saya"? Kalau bisa, ubah kalimat itu sampai yang tersisa hanya pola perilakunya.</div>
+  <h2>Konteks hukum (dicek 7 Nov 2026, bukan nasihat hukum)</h2>
+  <ul>
+    <li>UU ITE Pasal 27A (nama baik) hanya untuk korban perseorangan; lembaga, institusi, jabatan tidak bisa melapor (Putusan MK 105/PUU-XXII/2024).</li>
+    <li>KUHP baru Pasal 240–241 (penghinaan pemerintah dan lembaga negara) dibatalkan MK pada 28 Agustus 2026.</li>
+    <li>Tetap berlaku: Pasal 218 (kehormatan presiden/wakil presiden, delik aduan), pencemaran nama baik perorangan, larangan ujaran kebencian SARA.</li>
+  </ul>
+  <div class="foot"><span>less.certain · buku gaya</span><span>17</span></div>
+</section>
+
+<!-- 16 SUARA -->
+<section class="page">
+  <div class="kicker">16 · Suara dan audio</div>
+  <h1>Narasi yang tidak datar</h1>
+  <table>
+    <tr><th>Hal</th><th>Aturan</th></tr>
+    <tr><td>Model</td><td>Naya dan Yan <b>selalu ElevenLabs v4</b> untuk semua nada, karena nadanya tidak datar. Model v3 tidak dipakai untuk Yan (suaranya berderau).</td></tr>
+    <tr><td>Suara</td><td>Naya = Leya. Yan = Ibnu (dipilih lewat audisi). Tidak diganti tanpa keputusan pemilik akun.</td></tr>
+    <tr><td>Nada</td><td>Tag nada dalam naskah: [softly], [warmly], [curious], [flatly], [annoyed], [sighs]. Kontras lebih penting daripada marah terus-menerus.</td></tr>
+    <tr><td>Stand-up</td><td>Pengaturan paling ekspresif; setup datar, puncak bersemangat.</td></tr>
+    <tr><td>Musik</td><td>Tidak ada musik latar. Hanya narasi + efek pop (bubble, tombol) dan slide (transisi), pelan di bawah narasi.</td></tr>
+    <tr><td>Volume</td><td>−14 LUFS, puncak ≤ −1 dBTP, seragam di semua video.</td></tr>
+    <tr><td>Penyuntingan</td><td>Antar-kalimat dipotong di titik paling senyap, supaya tidak ada suku kata terpotong. Jeda ditambah di penyuntingan, bukan dengan mempercepat suara.</td></tr>
+    <tr><td>Pembuka</td><td>Narasi mulai ±0,3 detik setelah video mulai.</td></tr>
+    <tr><td>Biaya</td><td>Suara dibuat setelah storyboard disetujui. Revisi visual memakai rekaman yang sudah ada.</td></tr>
+    <tr><td>Efek penonton</td><td>Pustaka tawa dibuat sekali dan dipakai ulang; membuat baru perlu izin.</td></tr>
+  </table>
+  <div class="call sage"><b>Kunci akun suara</b> bersifat rahasia: tidak pernah dicetak, disalin, atau dibagikan.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>18</span></div>
+</section>
+
+<!-- 16b TAG EKSPRESI SUARA -->
+<section class="page">
+  <div class="kicker">16 · Suara: tag ekspresi</div>
+  <h1>Mengarahkan nada suara</h1>
+  <p class="lead">Model v4 membaca tag dalam kurung siku sebagai arahan akting. Tag ditulis di awal kalimat dan berlaku sampai tag berikutnya. Tag tidak diucapkan dan tidak masuk subtitle.</p>
+  <table>
+    <tr><th>Tag</th><th>Rasa</th><th>Dipakai untuk</th></tr>
+    <tr><td>[softly]</td><td>pelan, akrab</td><td>hook pengakuan, kalimat reflektif, penutup</td></tr>
+    <tr><td>[warmly] / [tenderly] / [gently]</td><td>hangat, sayang, lembut</td><td>momen rekonsiliasi, "makasih", kilas balik keluarga</td></tr>
+    <tr><td>[curious]</td><td>bertanya, ingin tahu</td><td>pertanyaan penutup, pola "di banyak rumah…"</td></tr>
+    <tr><td>[thoughtful]</td><td>menimbang, merenung</td><td>belokan "oh ternyata", konteks</td></tr>
+    <tr><td>[skeptical] / [incredulous]</td><td>ragu, tidak percaya</td><td>penilaian awal ("Awalnya aku pikir…")</td></tr>
+    <tr><td>[annoyed] / [frustrated]</td><td>kesal, gemas</td><td>konflik, tuduhan, logika yang tidak masuk akal</td></tr>
+    <tr><td>[sarcastic] / [mocking]</td><td>menyindir, menirukan</td><td>Open Mic; kutipan orang yang menghakimi</td></tr>
+    <tr><td>[deadpan] / [flatly]</td><td>datar, tanpa emosi</td><td>setup stand-up, punchline kering</td></tr>
+    <tr><td>[shouting]</td><td>setengah teriak</td><td>1–2 puncak per episode Open Mic saja</td></tr>
+    <tr><td>[serious]</td><td>tegas, jujur</td><td>kalimat inti sebelum callback</td></tr>
+    <tr><td>[sighs] / [exhales] / [chuckles] / [laughs]</td><td>suara napas dan tawa kecil</td><td>sebelum kalimat yang berat atau lucu; maksimal 1–2 per video</td></tr>
+    <tr><td>[short pause] / [long pause]</td><td>jeda</td><td>sebelum kata pengejut; jeda panjang lebih baik ditambah di penyuntingan</td></tr>
+  </table>
+  <div class="grid2">
+    <div class="card"><h2>Aturan menulis tag</h2><ul>
+      <li>Satu tag per kalimat, maksimal; tidak semua kalimat perlu tag.</li>
+      <li>Kontras lebih penting dari intensitas: softly → annoyed → warmly.</li>
+      <li>Kutipan orang lain diberi tag sendiri di tengah kalimat: <i>komentar: [mocking] "Halah!…"</i></li>
+      <li>Tanda baca ikut mengarahkan: "…" ragu, "!" naik, "?" bertanya.</li>
+      <li>Angka ditulis huruf ("lima puluh ribu"), singkatan dieja.</li>
+      <li>Seluruh narasi dibuat dalam <b>satu permintaan</b> supaya warna suara konsisten; minta data waktu per huruf (timestamps) untuk subtitle.</li>
+    </ul></div>
+    <div class="card"><h2>Pengaturan permintaan</h2>
+      <table style="margin:0">
+        <tr><td>Model</td><td style="font-weight:400">eleven_v4</td></tr>
+        <tr><td>Naya</td><td style="font-weight:400">Leya · ID suara hAiGVB2GdXVPlylkAP9C</td></tr>
+        <tr><td>Yan</td><td style="font-weight:400">Ibnu · ID suara URAuwR59OqCASDVp35yi</td></tr>
+        <tr><td>Narasi</td><td style="font-weight:400">stability 0,5 · similarity 0,75 · speed 1,0</td></tr>
+        <tr><td>Stand-up</td><td style="font-weight:400">stability 0,0 (paling ekspresif)</td></tr>
+        <tr><td>Keluaran</td><td style="font-weight:400">MP3/WAV 44,1–48 kHz + timestamps</td></tr>
+      </table>
+      <p class="cap">ID suara bukan rahasia; kunci API tetap rahasia dan tidak pernah ditulis di naskah, prompt, atau dokumen.</p>
+    </div>
+  </div>
+<div class="foot"><span>less.certain · buku gaya</span><span>19</span></div>
+</section>
+<section class="page">
+  <div class="kicker">16 · Suara: contoh bertag</div>
+  <h1>Naskah siap dikirim ke suara</h1>
+  <p class="lead">Teks persis seperti ini yang dikirim dalam satu permintaan. Satu kalimat per baris; tag hanya saat nada berubah.</p>
+  <h2>Contoh narasi bertag (reguler, Naya)</h2>
+  <div class="card mono">[softly] Pacarku hampir nggak pernah minta maaf.<br>[annoyed] Setiap kali kami bertengkar, dia cuma diam.<br>[warmly] Tapi besoknya, dia tiba-tiba nanya aku udah makan atau belum.<br>[skeptical] Awalnya aku pikir, dia cuma gengsi.<br>[thoughtful] Sampai aku tahu, di rumahnya dulu, nggak ada yang terbiasa bilang maaf.<br>[tenderly] "Makasih, ya. Aku tahu ini caramu minta maaf."<br>[curious] Kalau kamu, tipe yang bilang, atau yang nunjukin?</div>
+  <h2>Contoh narasi bertag (Open Mic, Yan)</h2>
+  <div class="card mono">[deadpan] Sekarang kalau mau protes itu ada syaratnya.<br>Bukan izin keramaian. Bukan surat pengantar RT. [sarcastic] Struk belanja!<br>Terus ada yang komentar: [mocking] "Halah! Protes kok sambil bawa es kopi susu."<br>[annoyed] Saya diam. Saya mikir. [sarcastic] Iya juga ya. Mahal banget.<br>[short pause] [shouting] Itu termasuk yang kami protes!</div>
+    <div class="grid2" style="margin-top:3mm">
+    <div class="card"><h2>Kesalahan umum</h2><ul class="no">
+      <li>Tag di setiap baris sehingga nada melompat-lompat.</li>
+      <li>[shouting] lebih dari dua kali; punchline jadi berisik, bukan lucu.</li>
+      <li>Angka dan singkatan ditulis angka/huruf besar ("50rb", "RT" dibaca aneh).</li>
+      <li>Kalimat dibuat terpisah per permintaan sehingga warna suara berubah.</li>
+      <li>Mempercepat audio untuk mengejar durasi; potong naskah saja.</li>
+    </ul></div>
+    <div class="card"><h2>Setelah suara jadi</h2><ul class="ok">
+      <li>Dengarkan seluruhnya; ulangi hanya baris yang salah nada.</li>
+      <li>Cek tidak ada suku kata terpotong di sambungan.</li>
+      <li>Tambah jeda di penyuntingan (mis. 0,6 dtk setelah belokan).</li>
+      <li>Subtitle memakai teks tanpa tag, waktunya dari timestamps.</li>
+      <li>Simpan audio + data waktu; jangan membuat ulang teks yang sama.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>20</span></div>
+</section>
+
+<!-- 17 PENUTUP -->
+<section class="page">
+  <div class="kicker">17 · Penutup dan CTA</div>
+  <h1>Kartu penutup 3 detik</h1>
+  <div class="grid3">
+    <div><img class="img" src="gambar/outro-01.jpg"><div class="cap">0,8 detik: adegan ditahan, subtitle hilang, kartu mulai muncul.</div></div>
+    <div><img class="img" src="gambar/outro-02.jpg"><div class="cap">Kartu di area subtitle: wordmark, garis emas, CTA, tombol.</div></div>
+    <div><img class="img" src="gambar/outro-03.jpg"><div class="cap">3,0 detik: "+ Ikuti" ditekan jadi "Mengikuti ✓"; video selesai.</div></div>
+  </div>
+  <div class="grid2" style="margin-top:3mm">
+    <div class="card">
+      <h2>Bentuk</h2>
+      <ul>
+        <li>Kartu hijau tua di atas adegan terakhir, tidak memudar ke layar gelap.</li>
+        <li>Wordmark less.certain + garis emas, satu baris CTA, tombol "+ Ikuti" → "Mengikuti ✓", ikon TikTok dan Instagram dengan @less.certain.</li>
+        <li>Posisi bawaan atas (area subtitle) supaya tokoh tetap terlihat; posisi bawah kalau bagian atas adegan ramai.</li>
+        <li>Efek suara: slide saat kartu masuk, klik saat tombol ditekan.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Kenapa 3 detik</h2>
+      <p>Kanal animasi sejenis selesai 0–4 detik setelah kata terakhir. Layar gelap yang lama memberi tanda "selesai" sehingga penonton menggeser sebelum CTA terbaca.</p>
+      <h2>CTA bergantian</h2>
+      <p>Ikuti (bawaan), tanya (pertanyaan tentang penonton), seri (Open Mic). Jangan terasa seperti formula di setiap video.</p>
+    </div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>21</span></div>
+</section>
+
+<!-- 18 COVER -->
+<section class="page">
+  <div class="kicker">18 · Cover dan thumbnail</div>
+  <h1>Cover yang terbaca di grid</h1>
+  <img class="img" src="gambar/thumb-lembar.jpg" style="max-height:150mm;width:auto;margin:0 auto">
+  <div class="cap">Atas: cover pose (Maaf), wajah dengan jam (Telat), Open Mic. Bawah: simulasi grid profil 3:4 dengan ikon platform.</div>
+  <div class="grid2" style="margin-top:3mm">
+    <div class="card">
+      <h2>Susunan</h2>
+      <ul>
+        <li>Wordmark kiri atas; teks hook 2–4 kata besar di bawahnya, sama dengan hook video.</li>
+        <li>Tokoh dengan emosi jelas; <b>wajah adalah bagian paling terang</b>.</li>
+        <li>Latar lokasi diburamkan, warna tema tipis, vinyet di tepi.</li>
+        <li>Satu benda petunjuk cerita, sebaiknya dipegang tokoh.</li>
+        <li>Tanpa label tema (tertutup ikon Reels).</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Dua framing</h2>
+      <ul>
+        <li><b>Pose sedang</b> (cover utama): gestur + benda yang dipegang menceritakan gagasan.</li>
+        <li><b>Close-up wajah</b> (alternatif): kalau emosinya yang menjadi cerita.</li>
+      </ul>
+      <h2>Grid profil</h2>
+      <ul>
+        <li>Instagram dan TikTok memotong cover jadi 3:4; isi penting di tengah.</li>
+        <li>Kanan atas (ikon) dan kiri bawah (jumlah tayangan) dikosongkan.</li>
+        <li>Bawah 9:16 bisa tertutup judul di YouTube Shorts.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>22</span></div>
+</section>
+
+<!-- 19 ALUR -->
+<section class="page">
+  <div class="kicker">19 · Alur produksi</div>
+  <h1>Dari ide sampai siap unggah</h1>
+  <table>
+    <tr><th>#</th><th>Langkah</th><th>Isi</th><th>Gerbang</th></tr>
+    <tr><td>1</td><td>Lembar ide</td><td>Situasi, penilaian, hook, kata kunci, belokan, bukti, penutup, cover</td><td></td></tr>
+    <tr><td>2</td><td>Naskah</td><td>Ditulis dengan kerangka 61–75 detik; dicek dengan daftar lolos/ulang</td><td>ditunjukkan ke pemilik</td></tr>
+    <tr><td>3</td><td>Storyboard</td><td>Gambar diam awal → akhir untuk setiap kalimat, dengan lokasi, kamera, pose, bubble</td><td><b>wajib disetujui</b></td></tr>
+    <tr><td>4</td><td>Suara</td><td>Narasi satu take dengan model v4</td><td>setelah storyboard</td></tr>
+    <tr><td>5</td><td>Penyuntingan suara</td><td>Potong di titik senyap, jeda, waktu subtitle</td><td></td></tr>
+    <tr><td>6</td><td>Animasi</td><td>Film dibuat dari storyboard yang disetujui; kamera bergerak terus</td><td></td></tr>
+    <tr><td>7</td><td>Pemeriksaan</td><td>Anatomi, area aman, bubble vs wajah, pembuka, waktu diam</td><td>tanpa temuan</td></tr>
+    <tr><td>8</td><td>Render dan efek</td><td>Video final, efek pop/slide, volume −14 LUFS</td><td></td></tr>
+    <tr><td>9</td><td>Cover</td><td>Versi pose dan wajah, potongan 9:16, 4:5, 3:4</td><td></td></tr>
+    <tr><td>10</td><td>Kemasan</td><td>Caption, judul Shorts, komentar sematan</td><td>ditunjukkan ke pemilik</td></tr>
+    <tr><td>11</td><td>Paket siap unggah</td><td>Video, cover, caption, data unggah dalam satu paket</td><td><b>setelah disetujui</b></td></tr>
+  </table>
+  <h2>Prinsip kerja</h2>
+  <div class="grid2">
+    <ul>
+      <li>Perbaikan yang berguna untuk video lain dijadikan komponen bersama, bukan dibuat ulang per video.</li>
+      <li>Aset yang sudah dipakai video terkirim tidak diubah; perubahan jadi versi baru.</li>
+      <li>Revisi cerita yang sama naik versi (v2, v3); versi lama tetap utuh.</li>
+    </ul>
+    <ul>
+      <li>Arahan baru yang menimpa arahan lama ditanyakan dulu ke pemilik akun.</li>
+      <li>Tidak ada jadwal tetap: video dibuat dari ide, bukan konten harian.</li>
+      <li>Mengunggah dan memublikasikan hanya atas permintaan pemilik akun.</li>
+    </ul>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>23</span></div>
+</section>
+
+<!-- 20 KEMASAN -->
+<section class="page">
+  <div class="kicker">20 · Kemasan dan unggah</div>
+  <h1>Caption, komentar, paket unggah</h1>
+  <div class="grid2" style="align-items:start">
+    <div>
+      <h2>Template caption</h2>
+      <div class="card mono">[hook satu kalimat + KATA KUNCI]<br>[satu kalimat yang bikin penasaran]<br>[pertanyaan tentang penonton, 1–3 kata]<br>Sumber: [singkat] (kalau ada klaim fakta)<br>#less #[katakunci] #[topik] #[umum]</div>
+      <h2>Judul YouTube Shorts</h2>
+      <p>Kata kunci di awal + hook, ±60 karakter. Contoh: "Minta maaf tanpa kata: kenapa dia jarang bilang maaf?"</p>
+      <h2>Komentar sematan</h2>
+      <p><b>Reguler:</b> sumber riset + satu pertanyaan lanjutan.<br><b>Open Mic:</b> "skenario fiktif, menyindir pola, bukan orang" + ajakan keresahan untuk episode berikutnya.</p>
+    </div>
+    <div>
+      <h2>Paket siap unggah</h2>
+      <p>Hanya video yang sudah disetujui pemilik akun. Satu paket per video, dinamai judulnya (tanpa tanggal):</p>
+      <ul>
+        <li>video final (file master);</li>
+        <li>cover utama versi pose (9:16, 3:4, 4:5) dan cover alternatif versi wajah;</li>
+        <li>caption per platform, judul Shorts, komentar sematan;</li>
+        <li>data unggah: judul, tanggal disetujui, kutipan persetujuan, hashtag, sidik file, status unggah per platform.</li>
+      </ul>
+      <h2>Saat mengunggah</h2>
+      <ul>
+        <li>Unggah file master langsung ke setiap platform; jangan unduhan dari platform lain (konten tidak orisinal diturunkan).</li>
+        <li>Pilih cover dari paket; sesuaikan potongan grid kalau perlu.</li>
+        <li>Perbarui status unggah setelah selesai.</li>
+      </ul>
+    </div>
+  </div>
+  <h2>Sinyal per platform</h2>
+  <table>
+    <tr><th>Platform</th><th>Yang diperhatikan</th></tr>
+    <tr><td>TikTok</td><td>menonton sampai habis; video di atas 1 menit untuk program bayaran; pencarian membaca caption, teks layar, ucapan</td></tr>
+    <tr><td>Instagram</td><td>waktu tonton, like per jangkauan, kiriman per jangkauan; grid 3:4</td></tr>
+    <tr><td>YouTube Shorts</td><td>viewed vs swiped away, engaged views; tanpa end screen; judul dengan kata kunci</td></tr>
+    <tr><td>Facebook</td><td>orisinalitas; unggahan ulang diturunkan</td></tr>
+  </table>
+  <div class="foot"><span>less.certain · buku gaya</span><span>24</span></div>
+</section>
+
+<!-- BAGIAN TEKNIS -->
+<section class="page cover" style="justify-content:center;gap:8mm">
+  <div class="kicker" style="color:var(--gold)">Bagian teknis</div>
+  <div class="word" style="font-size:40pt">Untuk agent AI dan animator</div>
+  <div class="line"></div>
+  <div class="q" style="font-size:13pt;max-width:160mm">Halaman berikut berisi ukuran, koordinat, warna, rumus gerak, waktu, pengaturan suara, format data, dan contoh prompt. Tujuannya: siapa pun, manusia atau agent, bisa membuat video Less. yang terlihat dan terdengar sama tanpa melihat file produksi asli.</div>
+  <div style="font-size:9.5pt;max-width:160mm;opacity:.9">Semua ukuran ditulis untuk kanvas 1080×1920 px. Kalau alatmu memakai satuan lain, skalakan secara proporsional.</div>
+</section>
+
+<section class="page">
+  <div class="kicker">T1 · Cara memakai bagian teknis</div>
+  <h1>Apa yang dibutuhkan agent</h1>
+  <div class="grid2">
+    <div class="card"><h2>Kemampuan minimum</h2><ul>
+      <li>Menggambar vektor (SVG, Canvas, After Effects, Rive, Lottie, atau sejenis) dan mengekspor frame 1080×1920, 30 fps.</li>
+      <li>Memanggil ElevenLabs Text-to-Speech dengan data waktu per huruf.</li>
+      <li>Menggabungkan video dan audio (misalnya ffmpeg) dan mengukur kenyaringan.</li>
+      <li>Menunjukkan hasil ke pemilik akun dan menunggu persetujuan.</li>
+    </ul></div>
+    <div class="card"><h2>Batas yang jujur</h2><ul>
+      <li>Model gambar/video generatif (teks → video) tidak bisa menjaga tokoh tetap identik antar-shot. Gunakan hanya untuk eksplorasi, bukan video akhir.</li>
+      <li>Tokoh harus digambar ulang sebagai vektor mengikuti blueprint T2 dan warna T3. Bandingkan dengan gambar tokoh di halaman 3 sebelum lanjut.</li>
+      <li>Buat <b>lembar tokoh</b> dulu (depan, 3/4, 6 ekspresi, semua pose) dan minta persetujuan sebelum membuat video pertama.</li>
+    </ul></div>
+  </div>
+  <h2>Urutan kerja agent</h2>
+  <table>
+    <tr><th>#</th><th>Tahap</th><th>Keluaran</th><th>Berhenti?</th></tr>
+    <tr><td>0</td><td>Lembar tokoh (sekali saja)</td><td>Gambar tokoh, ekspresi, pose, kucing</td><td>ya, minta persetujuan</td></tr>
+    <tr><td>1</td><td>Lembar ide</td><td>Isian lampiran lembar ide</td><td></td></tr>
+    <tr><td>2</td><td>Naskah bertag</td><td>Narasi per baris + tag ekspresi + bubble + perkiraan durasi</td><td>ya</td></tr>
+    <tr><td>3</td><td>Storyboard</td><td>Satu panel awal → akhir per kalimat (format T7)</td><td>ya, wajib</td></tr>
+    <tr><td>4</td><td>Suara</td><td>Satu file narasi + timestamps</td><td></td></tr>
+    <tr><td>5</td><td>Timeline</td><td>Waktu baris dan kata, potongan di titik senyap, waktu outro</td><td></td></tr>
+    <tr><td>6</td><td>Animasi + render</td><td>Video 1080×1920 + efek suara + −14 LUFS</td><td></td></tr>
+    <tr><td>7</td><td>Pemeriksaan</td><td>Checklist terisi + laporan temuan</td><td></td></tr>
+    <tr><td>8</td><td>Cover + kemasan</td><td>Cover pose dan wajah, caption, judul, komentar sematan</td><td>ya</td></tr>
+    <tr><td>9</td><td>Paket siap unggah</td><td>Satu paket per video yang disetujui</td><td>unggah hanya atas perintah</td></tr>
+  </table>
+  <div class="call wine"><b>Jangan pernah:</b> mendesain ulang tokoh, menambah musik, mengunggah tanpa izin, memakai suara lain untuk Naya/Yan, membuat ulang efek tawa yang sudah ada, atau menulis kunci API di mana pun.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>25</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T2 · Blueprint tokoh</div>
+  <h1>Ukuran dan titik sendi</h1>
+  <img class="img" src="gambar/blueprint.jpg">
+  <div class="grid2" style="margin-top:3mm">
+    <div class="card"><h2>Sistem koordinat</h2><ul>
+      <li>Titik asal (0, 0) = tengah di antara kedua kaki, di lantai. Sumbu y negatif = ke atas.</li>
+      <li>Tinggi tokoh ±340 unit (ujung rambut ±−335). Kotak wajah x −62…62, y −318…−210.</li>
+      <li>Skala 1 = 1 unit per piksel. Tokoh penuh di layar: skala 2 (±680 px), lantai di y 1620.</li>
+      <li>Skala tokoh di layar (skala tokoh × zoom kamera) maksimal 4,6.</li>
+      <li>Lebar bahu Naya ±36 (y −202), Yan ±42 (y −209).</li>
+    </ul></div>
+    <div class="card"><h2>Proporsi</h2><ul>
+      <li>Kepala besar ±1/3 tinggi badan (gaya chibi lembut).</li>
+      <li>Mata oval gelap dengan satu titik kilau; alis tipis melengkung; hidung titik kecil; pipi merona bulat.</li>
+      <li>Lengan dua ruas (atas + bawah) dengan siku; panjang total Naya 84, Yan 90 unit; lengan atas 42% dari panjang.</li>
+      <li>Tangan kartun empat jari, kecil (skala 0,7 Naya; 0,76 Yan).</li>
+      <li>Kaki lurus, sepatu kets bulat; bayangan elips tipis di lantai.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>26</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T3 · Warna tokoh dan rig</div>
+  <h1>Palet per bagian badan</h1>
+  <table>
+    <tr><th>Bagian</th><th>Naya</th><th>Yan</th></tr>
+    <tr><td>Kulit</td><td style="font-weight:400">#FCEADE</td><td style="font-weight:400">#FCEADE</td></tr>
+    <tr><td>Rambut</td><td style="font-weight:400">#3D281D (bayangan #4A3326)</td><td style="font-weight:400">#382E31 (sorotan #4A3E41)</td></tr>
+    <tr><td>Alis / garis wajah</td><td style="font-weight:400">#543A2A</td><td style="font-weight:400">#4A3E41</td></tr>
+    <tr><td>Mulut</td><td style="font-weight:400">#D15368</td><td style="font-weight:400">#A84C62</td></tr>
+    <tr><td>Rona pipi</td><td style="font-weight:400">#FF9E80</td><td style="font-weight:400">#E8998D</td></tr>
+    <tr><td>Baju</td><td style="font-weight:400">rajut V peach #FFCDB2, tulisan less.certain</td><td style="font-weight:400">polo sage #95B8A2, kantong dada, 2 kancing</td></tr>
+    <tr><td>Bawahan</td><td style="font-weight:400">rok sage selutut #9FB8AD</td><td style="font-weight:400">celana pendek peach #EDAE8C, kantong samping</td></tr>
+    <tr><td>Kaus kaki</td><td style="font-weight:400">#F8F5EF</td><td style="font-weight:400">#F8F5EF</td></tr>
+    <tr><td>Sepatu / sol</td><td style="font-weight:400">#78978A / #5F7D70</td><td style="font-weight:400">#6F897B / #566F62</td></tr>
+    <tr><td>Wajah memerah</td><td style="font-weight:400">#E98A80, gradasi dari dahi</td><td style="font-weight:400">#E58C86</td></tr>
+  </table>
+  <h2>Koordinat tangan per pose (relatif ke titik pijak)</h2>
+  <table>
+    <tr><th>Pose</th><th>Naya kiri / kanan</th><th>Yan kiri / kanan</th><th>Catatan</th></tr>
+    <tr><td>santai</td><td style="font-weight:400">(−40,−124) / (40,−122)</td><td style="font-weight:400">(−44,−124) / (44,−124)</td><td style="font-weight:400">tangan di samping paha</td></tr>
+    <tr><td>melambai</td><td style="font-weight:400">(−62,−262) / (40,−122)</td><td style="font-weight:400">(−44,−124) / (66,−268)</td><td style="font-weight:400">lengan yang naik: siku di bawah tangan</td></tr>
+    <tr><td>pinggang</td><td style="font-weight:400">(−34,−150) / (40,−122)</td><td style="font-weight:400">(−44,−124) / (40,−150)</td><td style="font-weight:400">satu tangan di pinggang</td></tr>
+    <tr><td>bertaut</td><td style="font-weight:400">(−10,−140) / (10,−140)</td><td style="font-weight:400">(−11,−140) / (11,−140)</td><td style="font-weight:400">kedua tangan di depan perut</td></tr>
+    <tr><td>berpikir</td><td style="font-weight:400">(−30,−150) / (10,−224)</td><td style="font-weight:400">—</td><td style="font-weight:400">siku kanan ke bawah, tangan di dagu</td></tr>
+    <tr><td>pegangDepanDada</td><td style="font-weight:400">(−40,−124) / (30,−190)</td><td style="font-weight:400">(−44,−124) / (30,−190)</td><td style="font-weight:400">HP/gelas di tangan kanan</td></tr>
+    <tr><td>sodorKiri</td><td style="font-weight:400">—</td><td style="font-weight:400">(−50,−132) / (44,−124)</td><td style="font-weight:400">duduk; benda di tangan kiri</td></tr>
+    <tr><td>angkatGalon</td><td style="font-weight:400">—</td><td style="font-weight:400">(−40,−150) / (40,−150)</td><td style="font-weight:400">alas benda di y −140</td></tr>
+  </table>
+  <div class="grid2">
+    <div class="card"><h2>Pemeriksaan anatomi lengan</h2><p>Tolak bila: siku di atas bahu, lengan lurus kaku, jarak bahu–tangan melebihi panjang lengan, tangan di belakang kepala, lengan menyilang badan mendatar, tangan menempel di badan (|x| &lt; 30–36 dan y &gt; −228), atau siku mencuat keluar.</p></div>
+    <div class="card"><h2>Gerak hidup</h2><ul>
+      <li>Kedip 3 frame, jeda acak 2,3–5,3 dtk; 28% kedip dua kali.</li>
+      <li>Napas: badan naik-turun ±1–2 unit, siklus ±3 dtk.</li>
+      <li>Bicara: mulut buka-tutup mengikuti suku kata, hanya untuk pembicara bubble.</li>
+      <li>Kepala miring ±4° mengikuti lirikan; badan condong ±3°.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>27</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T4 · Spesifikasi layar</div>
+  <h1>Ukuran bubble, subtitle, kartu</h1>
+  <div class="grid2">
+    <div class="card"><h2>Bubble (s = 60 px)</h2><ul>
+      <li>Lebar = maks(2,6·s, jumlah huruf × 0,62·s + 1,3·s); tinggi = 1,9·s; sudut = tinggi/2 (oval).</li>
+      <li>Isi krem #FFF9EF, huruf Lato Black s px tinta #283D36, garis dasar teks di y + 0,35·s.</li>
+      <li>Ekor: pangkal di x ± min(0,22·lebar, jarak ke ujung), y + 0,38·tinggi; setengah lebar pangkal 0,32·s; dua kurva kuadratik ke ujung (dekat mulut).</li>
+      <li>Bayangan: bentuk yang sama, tinta 13%, turun 0,12·s.</li>
+      <li>Muncul memantul dari ujung ekor; efek suara pop.</li>
+    </ul></div>
+    <div class="card"><h2>Subtitle</h2><ul>
+      <li>Baris pertama mulai x 110, y 300; jarak antar-baris 70 px.</li>
+      <li>Kotak per kata: lebar teks + 20, tinggi 62, sudut 8; jarak antar-kata 8 px.</li>
+      <li>Lato Bold 44 px; teks di x + 10, y + 45.</li>
+      <li>Krem #FFF9EF + tinta; kata kunci wine #8B4354 + krem.</li>
+      <li>Masuk 7 frame (ease-out kubik, geser dari −12, −8); keluar 3 frame.</li>
+    </ul></div>
+    <div class="card"><h2>Tanda "!" dan "?"</h2><ul>
+      <li>Bintang 22 titik, jari-jari 38/26 unit; isi wine atau sage.</li>
+      <li>Huruf Lato Black 44 krem; goyang ±3° yang mereda dalam 20 frame.</li>
+    </ul></div>
+    <div class="card"><h2>Kartu penutup</h2><ul>
+      <li>Kartu tinta #283D36 opasitas 97%, sudut 40; isi di x 60–920 (tengah x 490), y ≥ 250.</li>
+      <li>Wordmark Playfair 88 krem; garis emas #D1A258; CTA Lato 38.</li>
+      <li>Tombol 250×70, sudut 35: wine "+ Ikuti" → krem "Mengikuti ✓" di detik 1,3 kartu, cincin emas memancar.</li>
+      <li>Gradasi gelap di belakang kartu 0→80% dalam 12 frame.</li>
+    </ul></div>
+  </div>
+  <h2>Rumus gerak (t = 0…1)</h2>
+  <table>
+    <tr><th>Nama</th><th>Rumus</th><th>Dipakai untuk</th></tr>
+    <tr><td>smooth</td><td style="font-weight:400">t² · (3 − 2t)</td><td style="font-weight:400">kamera, cahaya, perpindahan tokoh</td></tr>
+    <tr><td>quick</td><td style="font-weight:400">1 − (1 − t)³</td><td style="font-weight:400">subtitle, kartu masuk, benda muncul</td></tr>
+    <tr><td>popIn</td><td style="font-weight:400">x = (f − a)/7; skala = 1 + 2,2(x−1)³ + 1,2(x−1)²; opasitas = min(1, 2x); hilang di 6 frame terakhir</td><td style="font-weight:400">bubble, tanda, kartu gag</td></tr>
+  </table>
+  <div class="call"><b>Area aman</b> untuk semua teks dan kartu: x 60–920, y 220–1480. Bubble tidak boleh menutupi lebih dari 12% kotak wajah tokoh mana pun.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>28</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T5 · Waktu, audio, render</div>
+  <h1>Angka-angka produksi</h1>
+  <table>
+    <tr><th>Hal</th><th>Nilai</th></tr>
+    <tr><td>Kanvas</td><td style="font-weight:400">1080×1920, 30 fps, frame = round(detik × 30)</td></tr>
+    <tr><td>Shot minimum</td><td style="font-weight:400">39 frame (1,3 dtk)</td></tr>
+    <tr><td>Awal narasi</td><td style="font-weight:400">potongan audio mulai 0,15 dtk; kata pertama ±0,27 dtk; subtitle tampil ≤0,3 dtk</td></tr>
+    <tr><td>Antar-baris</td><td style="font-weight:400">potong di jendela 20 ms paling senyap, dicari antara (akhir baris − 0,35) dan (awal baris berikut + 0,1); jeda maks 1,1 dtk kecuali jeda sengaja</td></tr>
+    <tr><td>Penutup</td><td style="font-weight:400">kartu mulai 24 frame setelah kata terakhir; kartu penuh +12 frame; video selesai +66 frame (ekor 3,0 dtk)</td></tr>
+    <tr><td>Kamera</td><td style="font-weight:400">diam ≤50% waktu; diam beruntun ≤3 dtk; transisi ≤0,7 dtk; skala tokoh efektif ≤4,6; pembuka ≥2,4</td></tr>
+    <tr><td>Efek suara</td><td style="font-weight:400">pop −14 dB · slide −20 dB · tick −18 dB · click −11 dB · pin −15 dB (relatif ke klip efek)</td></tr>
+    <tr><td>Kenyaringan</td><td style="font-weight:400">−14 LUFS terpadu, puncak ≤ −1 dBTP, normalisasi linear dua tahap setelah efek dicampur</td></tr>
+    <tr><td>Audio</td><td style="font-weight:400">48 kHz stereo, AAC 192 kbps</td></tr>
+    <tr><td>Video</td><td style="font-weight:400">H.264, yuv420p, CRF 18, faststart</td></tr>
+    <tr><td>Stand-up</td><td style="font-weight:400">jeda 1,2–1,8 dtk sebelum punchline terkuat; narasi menimpa 40–50% ekor tawa, tawa diredam 6 dB; tawa ≤10%, senyap 8–12%; puncak tawa ±−18 dB, kekeh ±−25 dB; gumam ruangan + pantulan ruang kecil</td></tr>
+  </table>
+  <h2>Data waktu (format timeline)</h2>
+  <div class="card mono">{ "fps": 30, "outro": 1984, "total": 2038,<br>&nbsp;&nbsp;"lines": [ { "text": "Pacarku hampir nggak pernah minta maaf.",<br>&nbsp;&nbsp;&nbsp;&nbsp;"start": 0.27, "end": 2.41,<br>&nbsp;&nbsp;&nbsp;&nbsp;"words": [ {"w":"Pacarku","s":0.27,"e":0.78}, {"w":"hampir","s":0.80,"e":1.12}, … ] }, … ] }</div>
+  <p class="cap">Waktu baris dan kata dalam detik setelah penyuntingan, dipakai untuk subtitle per kata, bubble, perubahan ekspresi, dan potongan kamera. Untuk stand-up ditambah daftar tawa: baris, waktu mulai, durasi.</p>
+  <div class="foot"><span>less.certain · buku gaya</span><span>29</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T6 · Format storyboard</div>
+  <h1>Satu kalimat, satu panel</h1>
+  <p class="lead">Storyboard ditunjukkan sebagai gambar diam: setiap panel berisi keadaan awal dan akhir kalimat itu. Panel dan tabel di bawah dibuat sebelum suara.</p>
+  <table>
+    <tr><th>#</th><th>Narasi (tag)</th><th>Lokasi · waktu</th><th>Kamera</th><th>Tokoh · pose · mood</th><th>Layar</th></tr>
+    <tr><td>1</td><td style="font-weight:400">[softly] Pacarku hampir nggak pernah minta maaf.</td><td style="font-weight:400">kedai kopi · malam hujan</td><td style="font-weight:400">close-up 2,6 → dorong 2,9</td><td style="font-weight:400">Naya santai, soft, menatap kamera; Yan di samping</td><td style="font-weight:400">subtitle, kunci "maaf"</td></tr>
+    <tr><td>2</td><td style="font-weight:400">[annoyed] Setiap kali kami bertengkar, dia cuma diam.</td><td style="font-weight:400">kedai kopi</td><td style="font-weight:400">medium berdua, geser kanan</td><td style="font-weight:400">Naya pinggang, annoyed, memerah; Yan bertaut, unsure</td><td style="font-weight:400">bubble Naya "Kamu tuh…!"</td></tr>
+    <tr><td>6</td><td style="font-weight:400">[skeptical] Awalnya aku pikir, dia cuma gengsi.</td><td style="font-weight:400">kamar Naya · malam</td><td style="font-weight:400">medium, dorong masuk</td><td style="font-weight:400">Naya berpikir, thinking; kucing tidur di kasur</td><td style="font-weight:400">bubble pikiran "Gengsi?"</td></tr>
+    <tr><td>8</td><td style="font-weight:400">Habis bapaknya marah besar,</td><td style="font-weight:400">rumah Yan kecil · kilas balik sepia</td><td style="font-weight:400">tarik mundur dari foto keluarga</td><td style="font-weight:400">bapak pinggang, annoyed; Yan kecil hurt</td><td style="font-weight:400">tanda "!" wine</td></tr>
+    <tr><td>11</td><td style="font-weight:400">[curious] Di banyak rumah, maaf dan sayang…</td><td style="font-weight:400">deretan jendela kampung</td><td style="font-weight:400">zoom out satu → semua jendela</td><td style="font-weight:400">extras keluarga di tiap jendela</td><td style="font-weight:400">—</td></tr>
+    <tr><td>16</td><td style="font-weight:400">[curious] Kalau kamu, tipe yang bilang, atau yang nunjukin?</td><td style="font-weight:400">taman senja</td><td style="font-weight:400">close-up, Naya menatap kamera</td><td style="font-weight:400">Naya soft; Yan warm</td><td style="font-weight:400">kartu penutup varian tanya</td></tr>
+  </table>
+  <div class="grid2">
+    <div class="card"><h2>Isi setiap panel</h2><ul>
+      <li>Nomor dan teks kalimat; waktu perkiraan.</li>
+      <li>Gambar awal dan akhir yang berbeda (aksi, kamera, cahaya, atau benda).</li>
+      <li>Catatan bubble, tanda, kartu, dan efek suara.</li>
+      <li>Penanda belokan "Tapi…" dan momen "oh ternyata".</li>
+    </ul></div>
+    <div class="card"><h2>Pemeriksaan storyboard</h2><ul>
+      <li>Frame pertama sudah hook (close-up/medium, tanpa layar kosong).</li>
+      <li>Lokasi dan waktu konsisten antar-panel.</li>
+      <li>Kucing oranye muncul sekali.</li>
+      <li>Bubble tidak menutupi wajah; teks di area aman.</li>
+    </ul></div>
+  </div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>30</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T7 · Contoh prompt</div>
+  <h1>Prompt utama untuk agent</h1>
+  <p class="lead">Lampirkan buku gaya ini, lalu kirim prompt berikut. Ganti bagian dalam &lt;…&gt;.</p>
+  <div class="card mono">Kamu adalah produser animasi untuk akun less.certain. Buku Gaya Less.<br>terlampir adalah aturan wajib; kalau ada yang bertentangan, tanya aku.<br><br>Tugas: buat satu video vertikal 1080×1920, 30 fps, 61–75 detik.<br>Topik: &lt;situasi sehari-hari, mis. "pasangan yang selalu telat"&gt;<br>Narator: &lt;Naya / Yan&gt;   Seri: &lt;reguler / Open Mic #N&gt;<br>Kata kunci pencarian: &lt;mis. "telat"&gt;<br><br>Kerjakan bertahap sesuai halaman T1. Berhenti dan tunggu persetujuanku<br>setelah: (a) lembar ide + naskah bertag, (b) storyboard diam awal→akhir<br>per kalimat, (c) cover + caption. Jangan membuat suara sebelum<br>storyboard disetujui.<br><br>Aturan yang paling sering dilanggar:<br>- Gambar Naya/Yan persis seperti blueprint dan palet; jangan desain ulang.<br>- Hook ≤3 dtk tanpa salam; "Tapi…" di 55–65% durasi; penutup pertanyaan.<br>- Bubble ≤4 kata, tidak menutupi wajah; subtitle ≤7 kata, 2 baris.<br>- Kamera selalu bergerak; diam ≤50%, tidak ada diam &gt;3 dtk.<br>- Suara ElevenLabs eleven_v4, ID suara di halaman Suara, tag ekspresi.<br>- Tanpa musik. −14 LUFS. Kartu penutup 3 dtk di atas adegan terakhir.<br>- Jangan mengunggah apa pun.<br><br>Di akhir, isi checklist "Sebelum mengirim" dan laporkan yang belum lolos.</div>
+  <h2>Prompt lembar tokoh (sekali, sebelum video pertama)</h2>
+  <div class="card mono">Gambar ulang Naya dan Yan sebagai ilustrasi vektor datar pastel tanpa garis<br>tepi, mengikuti halaman 3 (gambar tokoh), T2 (blueprint) dan T3 (warna).<br>Buat satu lembar: tampak depan dan 3/4, enam ekspresi (soft, warm,<br>annoyed, hurt, thinking, unsure), semua pose di T3, dan kucing oranye<br>tiga pose. Letakkan gambar asli di sebelahnya untuk dibandingkan.<br>Tunjukkan ke aku dan tunggu persetujuan.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>31</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T7 · Contoh prompt per tahap</div>
+  <h1>Prompt naskah, storyboard, suara</h1>
+  <h2>Naskah</h2>
+  <div class="card mono">Tulis naskah Less. varian &lt;A/B/C&gt; tentang &lt;topik&gt;, narator &lt;Naya&gt;,<br>145–175 kata lisan. Format: satu kalimat per baris, diawali tag ekspresi<br>bila nadanya berubah (lihat halaman tag). Tandai baris hook, belokan<br>"Tapi…", dan "oh ternyata". Tambahkan kolom bubble (≤4 kata) dan<br>"dikirim ke siapa". Cek dengan daftar lolos/ulang dan laporkan hasilnya.</div>
+  <h2>Storyboard</h2>
+  <div class="card mono">Buat storyboard dari naskah yang disetujui: satu panel per kalimat, gambar<br>diam keadaan awal dan akhir, mengikuti tabel di T6 (lokasi·waktu, kamera,<br>tokoh·pose·mood, layar). Pakai hanya pose dari pustaka; lokasi Indonesia<br>dengan 6–8 benda khas dan perspektif trapesium. Tandai shot kucing oranye.<br>Kirim sebagai satu gambar lembar + tabel, lalu tunggu persetujuan.</div>
+  <h2>Suara</h2>
+  <div class="card mono">POST https://api.elevenlabs.io/v1/text-to-speech/&lt;ID suara&gt;/with-timestamps<br>Header: xi-api-key dari variabel lingkungan (jangan ditulis di prompt)<br>Body: { "model_id": "eleven_v4",<br>&nbsp;&nbsp;"text": "&lt;seluruh narasi bertag, satu baris per kalimat&gt;",<br>&nbsp;&nbsp;"voice_settings": { "stability": 0.5, "similarity_boost": 0.75 } }<br>Stand-up Yan: stability 0.0. Simpan audio + alignment; jangan membuat<br>ulang kalau teksnya sama. Cek tidak ada suku kata terpotong.</div>
+  <h2>Animasi dan render</h2>
+  <div class="card mono">Animasikan storyboard yang disetujui dengan timeline dari suara.<br>Subtitle per kata (T4), bubble muncul di kata yang diucapkan, ekspresi<br>berganti di awal kalimat, kamera bergerak di setiap shot (smooth),<br>kartu penutup varian &lt;ikuti/tanya/seri&gt; di 24 frame setelah kata<br>terakhir. Tambah efek pop/slide/click sesuai T5, normalisasi −14 LUFS,<br>ekspor H.264 CRF 18. Lalu jalankan pemeriksaan di halaman checklist.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>32</span></div>
+</section>
+
+<section class="page">
+  <div class="kicker">T7 · Contoh prompt lanjutan</div>
+  <h1>Prompt Open Mic, cover, kemasan, revisi</h1>
+  <h2>Open Mic</h2>
+  <div class="card mono">Tulis episode Open Mic #&lt;N&gt;: Yan stand-up tentang &lt;keresahan&gt;. Di bawah<br>90 dtk, satu premis, 2–3 bit, callback di akhir. Deadpan sebagai dasar,<br>[shouting] maksimal 2 kali. Tandai punchline, jeda sebelumnya, dan tawa<br>(kekeh/sedang/besar) dari pustaka tawa yang sudah ada. Jalankan uji tunjuk<br>dan batas aman satire; laporkan kalimat yang berisiko.</div>
+  <h2>Cover</h2>
+  <div class="card mono">Buat dua cover 1080×1920 (+ potongan 3:4 dan 4:5): (1) pose sedang dengan<br>benda petunjuk &lt;benda&gt; dipegang tokoh, (2) close-up wajah. Wordmark kiri<br>atas, judul 2–4 kata = hook. Wajah paling terang, latar lokasi buram,<br>vinyet. Kosongkan kanan atas dan kiri bawah. Tampilkan simulasi grid 3:4.</div>
+  <h2>Kemasan</h2>
+  <div class="card mono">Tulis caption TikTok/Instagram dengan template halaman Kemasan, judul<br>YouTube Shorts ±60 karakter diawali kata kunci, dan komentar sematan<br>(sumber + satu pertanyaan). Tanpa ajakan share/tag/komen.</div>
+  <h2>Revisi dan pemeriksaan</h2>
+  <div class="card mono">Periksa video ini terhadap checklist buku gaya. Untuk setiap butir tulis<br>lolos/gagal + detik kejadian. Khusus cek: bubble vs wajah, teks di luar<br>area aman, diam &gt;3 dtk, skala tokoh &gt;4,6, suku kata terpotong, volume.<br>Perbaiki yang gagal tanpa mengubah suara kecuali diminta.</div>
+  <h2>Prompt gambar (hanya untuk eksplorasi ide)</h2>
+  <div class="card mono">Flat pastel vector illustration, no outlines, soft gradients, warm cream<br>background, Indonesian setting. Young woman "Naya": dark-brown chin-length<br>bob, round face, rosy cheeks, peach knit V-neck crop sweater, sage knee<br>skirt, sage sneakers. Young man "Yan": short black hair with one strand,<br>sage polo shirt, peach shorts. Chibi-soft proportions, big head.<br>Negative: outlines, anime, 3D, realistic, text artifacts, extra fingers.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>33</span></div>
+</section>
+
+<!-- LEMBAR IDE -->
+<section class="page">
+  <div class="kicker">Lampiran · Lembar ide</div>
+  <h1>Lembar ide episode</h1>
+  <p class="lead">Isi sebelum menulis naskah. Baris yang tidak relevan ditulis "—" dengan alasan.</p>
+  <table class="blank">
+    <tr><td>Judul episode</td><td></td></tr>
+    <tr><td>Seri dan narator</td><td></td></tr>
+    <tr><td>Asal ide (pengalaman/isu/komentar + izin)</td><td></td></tr>
+    <tr><td>Situasi akrab (1 kalimat)</td><td></td></tr>
+    <tr><td>Penilaian yang dipertanyakan</td><td></td></tr>
+    <tr><td>Rumus hook + kalimat hook</td><td></td></tr>
+    <tr><td>Kata kunci pencarian</td><td></td></tr>
+    <tr><td>Varian naskah (A/B/C/Open Mic)</td><td></td></tr>
+    <tr><td>Belokan "Tapi…" (detik + visual)</td><td></td></tr>
+    <tr><td>Momen "oh ternyata"</td><td></td></tr>
+    <tr><td>Dikirim ke siapa?</td><td></td></tr>
+    <tr><td>Alasan dan bukti (sumber; fakta/dugaan/opini)</td><td></td></tr>
+    <tr><td>Penutup</td><td></td></tr>
+    <tr><td>CTA penutup (ikuti/tanya/seri)</td><td></td></tr>
+    <tr><td>Kucing oranye (shot + pose)</td><td></td></tr>
+    <tr><td>Tokoh, extras, lokasi</td><td></td></tr>
+    <tr><td>Target durasi dan kata</td><td></td></tr>
+    <tr><td>Judul cover (2–4 kata) + benda petunjuk</td><td></td></tr>
+    <tr><td>Khusus Open Mic: #episode, bit, punchline, uji tunjuk</td><td></td></tr>
+  </table>
+  <div class="foot"><span>less.certain · buku gaya</span><span>34</span></div>
+</section>
+
+<!-- CONTOH -->
+<section class="page">
+  <div class="kicker">Lampiran · Contoh terisi</div>
+  <h1>Maaf yang Nggak Pernah Diucapin</h1>
+  <table>
+    <tr><td>Hook</td><td>Pengakuan "aku": "Pacarku hampir nggak pernah minta maaf." Close-up di kedai malam; Naya menatap kamera.</td></tr>
+    <tr><td>Kata kunci</td><td>minta maaf</td></tr>
+    <tr><td>Penilaian</td><td>"Dia cuma gengsi."</td></tr>
+    <tr><td>Varian</td><td>B, cerita lalu mundur</td></tr>
+    <tr><td>Oh ternyata</td><td>Di rumah Yan dulu tidak ada yang bilang maaf; martabak setelah bapak marah adalah cara berdamai. Cahaya senja menghangat.</td></tr>
+    <tr><td>Mundur</td><td>"Di banyak rumah, maaf dan sayang memang lebih sering ditunjukin daripada diucapin" — pengamatan, bukan klaim riset. Visual: deretan jendela.</td></tr>
+    <tr><td>Dikirim ke</td><td>Pasangan yang jarang bilang maaf</td></tr>
+    <tr><td>Penutup</td><td>"Kalau kamu, tipe yang bilang, atau yang nunjukin?" → kartu varian tanya</td></tr>
+    <tr><td>Bubble</td><td>"Kamu tuh…!", "Lho?", "Gengsi?", "Makasih, ya.", "...maaf, ya."</td></tr>
+    <tr><td>Kucing</td><td>Duduk dan tidur di kasur Naya; berjalan di taman</td></tr>
+    <tr><td>Hasil</td><td>66,5 detik, narasi v4, waktu diam 30%, −14 LUFS, cover pose "Dia jarang minta maaf."</td></tr>
+  </table>
+  <img class="img" src="gambar/storyboard.jpg">
+  <div class="cap">Storyboard: 16 kalimat, keadaan awal → akhir, lima lokasi.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>35</span></div>
+</section>
+
+<!-- CHECKLIST -->
+<section class="page">
+  <div class="kicker">Lampiran · Checklist</div>
+  <h1>Sebelum mengirim</h1>
+  <div class="grid2">
+    <div class="card">
+      <h2>Naskah dan storyboard</h2>
+      <ul class="ok">
+        <li>Lembar ide terisi; hook ≤3 detik dengan kata kunci, tanpa salam.</li>
+        <li>"Tapi…" di 55–65% dengan perubahan visual; ada momen "oh ternyata".</li>
+        <li>Penutup pertanyaan/pengamatan; tanpa moral; angka ditulis dengan huruf.</li>
+        <li>Storyboard awal → akhir berbeda di setiap panel; disetujui.</li>
+        <li>Open Mic: lolos uji tunjuk; izin komentator kalau topik dari komentar.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Dunia dan tokoh</h2>
+      <ul class="ok">
+        <li>Benda wajar di dunia nyata dan sesuai waktu cerita.</li>
+        <li>Perspektif trapesium; skala benda sesuai tokoh.</li>
+        <li>Pose dari pustaka; tangan dan benda dicek di crop 100%.</li>
+        <li>Tidak ada tampak belakang penuh; tokoh duduk tertutup sampai lantai.</li>
+        <li>Kucing oranye muncul sekali; satu kucing per shot.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Layar dan kamera</h2>
+      <ul class="ok">
+        <li>Frame pertama: shot sedang/close-up, subtitle ≤0,3 detik.</li>
+        <li>Bubble ≤4 kata, tidak menutupi wajah, jauh dari subtitle.</li>
+        <li>Subtitle ≤7 kata dan 2 baris; semua teks di area aman.</li>
+        <li>Waktu diam ≤50%, tidak ada diam &gt;3 detik.</li>
+        <li>Skala tokoh di layar ≤4,6×.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h2>Audio dan penyerahan</h2>
+      <ul class="ok">
+        <li>Narasi v4, tanpa suku kata terpotong; tanpa musik.</li>
+        <li>Volume −14 LUFS ±1, puncak ≤ −1 dBTP.</li>
+        <li>Cover pose dan wajah (9:16, 4:5, 3:4) + caption + komentar sematan.</li>
+        <li>Setelah disetujui: paket siap unggah dibuat.</li>
+        <li>Belum ada unggahan tanpa permintaan pemilik akun.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="call" style="margin-top:5mm"><b>Kalau ragu:</b> tanyakan ke pemilik akun. Urutan prioritas: permintaan terbaru pemilik akun &gt; arahan tercatat &gt; buku gaya ini &gt; kebiasaan lama.</div>
+  <div class="foot"><span>less.certain · buku gaya</span><span>36</span></div>
+</section>
+
+</body>
+</html>

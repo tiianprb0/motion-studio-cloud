@@ -1,0 +1,2 @@
+# Lampion 2D (v1, 17 Nov 2026)
+Lampion kertas untuk video tentang web Less. (setiap keresahan di Kampung Less. digantung sebagai lampion). `Lampion({ x, y, s, f, nyala, warna, tali, emas, ayun, seed, id })`: x, y = titik gantung; s 1 ≈ badan 64×84 px (±35 cm untuk tokoh skala 1,1); nyala 0..1; `emas` = bingkai emas (lampion pendukung di web). Lampion adalah sumber cahaya: boleh digambar di atas lapisan cahaya lokasi supaya tidak ikut gelap. Contoh pemakaian: lampion di lampu tali kamar Naya dan lampion dari jendela-jendela kota (`kamar-naya-2d/v2` slot `luar`).

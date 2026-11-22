@@ -1,0 +1,104 @@
+[
+ {
+  "sfx": "pop",
+  "frame": 72,
+  "db": -14,
+  "dari": "label-0-satu-satunya populasi: 75–100 ekor"
+ },
+ {
+  "sfx": "pop",
+  "frame": 131,
+  "db": -14,
+  "dari": "kartu-COP31, 12 November 2026"
+ },
+ {
+  "sfx": "pop",
+  "frame": 412,
+  "db": -14,
+  "dari": "stempel-22 DES 2018"
+ },
+ {
+  "sfx": "pop",
+  "frame": 472,
+  "db": -14,
+  "dari": "kartu-Tsunami Selat Sunda, 22 Des 2018"
+ },
+ {
+  "sfx": "pop",
+  "frame": 619,
+  "db": -14,
+  "dari": "label-0-rumah badak"
+ },
+ {
+  "sfx": "pop",
+  "frame": 699,
+  "db": -14,
+  "dari": "label-0-rumah warga"
+ },
+ {
+  "sfx": "pop",
+  "frame": 803,
+  "db": -14,
+  "dari": "label-0-alat penerima · Tanjung Lesung"
+ },
+ {
+  "sfx": "pop",
+  "frame": 983,
+  "db": -14,
+  "dari": "kartu-Rumah baru ✓"
+ },
+ {
+  "sfx": "pop",
+  "frame": 1170,
+  "db": -14,
+  "dari": "stempel-KAJIAN: BELUM ADA"
+ },
+ {
+  "sfx": "pop",
+  "frame": 1226,
+  "db": -14,
+  "dari": "kartu-Kementerian Kehutanan"
+ },
+ {
+  "sfx": "pop",
+  "frame": 1398,
+  "db": -14,
+  "dari": "label-0-Balai TN Ujung Kulon · 19 Nov 2026"
+ },
+ {
+  "sfx": "pop",
+  "frame": 1645,
+  "db": -14,
+  "dari": "kartu-Dugaan: tambang emas"
+ },
+ {
+  "sfx": "pop",
+  "frame": 1798,
+  "db": -14,
+  "dari": "stempel-ESDM: BANTAH"
+ },
+ {
+  "sfx": "pop",
+  "frame": 1817,
+  "db": -14,
+  "dari": "stempel-ANTAM: BANTAH"
+ },
+ {
+  "sfx": "pop",
+  "frame": 1986,
+  "db": -14,
+  "dari": "label-0-tidak pernah diajak bicara"
+ },
+ {
+  "sfx": "slide",
+  "frame": 2285,
+  "db": -20,
+  "dari": "outro-c-masuk"
+ },
+ {
+  "sfx": "click",
+  "frame": 2325,
+  "db": -11,
+  "dari": "outro-c-ikuti"
+ }
+]

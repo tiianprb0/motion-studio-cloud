@@ -1,0 +1,21 @@
+{
+ "project": "projects/syarat-protes-struk-kopi",
+ "video": "Syarat-Protes-Struk-Kopi.mp4",
+ "created": "2026-11-07T03:33:41.305Z",
+ "files": {
+  "projects/syarat-protes-struk-kopi/src/Standup.tsx": "1ec3a2986a17a395f10254a7ba79317dbe00b6439c919a724b2f6571963e6b35",
+  "projects/syarat-protes-struk-kopi/src/caption-metrics.json": "31c1d316a350aed04b6b575540f4e796cd80d205decd7de498240032f86252c2",
+  "projects/syarat-protes-struk-kopi/src/cues.json": "ffa799b2925c60b2bfbcf93f63f8947deabeac38ee69f362a9203abf1c97dbbe",
+  "projects/syarat-protes-struk-kopi/src/timeline.json": "bd6fd3bcbb485e648087c1e55624c1dc0fbd055d820a256fa12669ff35114d89",
+  "shared/assets/brand-data/v1.ts": "3a617670a9c28d5c32c252d96ced6af29dc079d29e35044e55a3b91d56447ff9",
+  "shared/characters/rig/v1/Character.tsx": "e203b9ecf6a63f71958a1ee8abe6a7bf1318b3450c87d895322c365755a864e7",
+  "shared/characters/rig/v1/Elements.tsx": "9d6736f7936236570d8f4d806778a7104d4f5deaa7b7681d14eee704653f42c2",
+  "shared/characters/rig/v1/ExtraFace.tsx": "4651e808fa4cc0d49c4414befd13466519bc471af69192e753f4c7db797e2ee2",
+  "shared/characters/rig/v1/OutroOptions.tsx": "eff1dfad6c12665094f563d97e5f1bf2c36ea7bea69f5e490d24805389eca809",
+  "shared/characters/rig/v1/ReferenceFace.tsx": "3813d4eec8bd29f763665df222eab29475963fa0a9b5af6a23228ed60a87a762",
+  "shared/characters/rig/v1/SocialIcons.tsx": "e3a8d4a6e645491c781d5f65072b67020eddbdff78ad7bc6fd5bfbd0193115d8",
+  "shared/characters/rig/v1/brand-data.ts": "1d63f5d7776021c230d6bce2e27fddaac1ff03202460baeefb0ce5d673c6d431",
+  "shared/characters/rig/v1/fx.tsx": "29d09bf00fefba814e2aa92c886fee78d05fead004bccc1c93cc9cdf3b366ed1",
+  "shared/locations/kafe-open-mic/v1/OpenMic.tsx": "3b6fc91882835d939cf264153a19004aa313bc9a25a9503fc250f0da40cf589a"
+ }
+}

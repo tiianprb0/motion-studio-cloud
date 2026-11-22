@@ -1,0 +1,10 @@
+{
+  "note": "Tambahan pustaka penonton Open Mic (7 Nov 2026, izin pengguna 'jalankan semuanya'). Dibuat SEKALI dengan ElevenLabs Sound Effects; v1 tetap dipakai. Generate lagi butuh izin baru.",
+  "clips": [
+    {"id": "kekeh-tersebar-1", "duration": 1.5, "prompt": "Small comedy cafe audience, two or three people chuckling briefly and softly at slightly different moments, scattered, very short, quiet room, no music, no applause"},
+    {"id": "kekeh-tersebar-2", "duration": 1.5, "prompt": "In a quiet small comedy club audience, one man gives a short amused snort and one woman a quick giggle, very brief, no music"},
+    {"id": "huuu-1", "duration": 2.5, "prompt": "Small comedy club audience groaning a playful 'huuuu' of mock disapproval at a dark joke, mixed with a few uneasy laughs, starts immediately, no music"},
+    {"id": "tawa-reda-1", "duration": 2.0, "prompt": "Small comedy cafe audience gives a quick burst of genuine laughter that dies down fast, mixed men and women, starts immediately, no applause, no music"},
+    {"id": "ruang-penonton", "duration": 20.0, "influence": 0.6, "prompt": "Room tone of a small cafe comedy club during a stand-up set: about forty people sitting and listening quietly, very soft low murmur, occasional chair creak and a distant glass clink, no clear voices, no laughter, no applause, no music"}
+  ]
+}

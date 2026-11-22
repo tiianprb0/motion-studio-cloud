@@ -1,0 +1,13 @@
+{
+  "name": "motion-studio-tools",
+  "private": true,
+  "description": "Dependensi alat bersama Motion Studio. node_modules tidak masuk git; pulihkan dengan: cd tools && npm install. Playwright memakai .toolchain/node/node_modules (1.62.1) bila ada.",
+  "dependencies": {
+    "esbuild": "0.28.1",
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
+  },
+  "optionalDependencies": {
+    "playwright": "1.62.1"
+  }
+}

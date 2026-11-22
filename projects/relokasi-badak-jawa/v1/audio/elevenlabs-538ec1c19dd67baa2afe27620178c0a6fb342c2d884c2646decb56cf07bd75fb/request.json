@@ -1,0 +1,13 @@
+{
+  "status": "complete",
+  "request_sha256": "538ec1c19dd67baa2afe27620178c0a6fb342c2d884c2646decb56cf07bd75fb",
+  "voice_id": "hAiGVB2GdXVPlylkAP9C",
+  "model_id": "eleven_v4",
+  "actor": "naya",
+  "tone": "angry",
+  "characters": 1199,
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75
+  }
+}

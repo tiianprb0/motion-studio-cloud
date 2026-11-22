@@ -1,0 +1,93 @@
+[
+  {
+    "newStart": 0.3,
+    "newEnd": 6.46,
+    "oldStart": 0.3,
+    "oldEnd": 6.46,
+    "paragraph": 0
+  },
+  {
+    "newStart": 6.46,
+    "newEnd": 16.1,
+    "oldStart": 6.46,
+    "oldEnd": 16.1,
+    "paragraph": 1
+  },
+  {
+    "newStart": 16.1,
+    "newEnd": 19.34,
+    "oldStart": 16.1,
+    "oldEnd": 19.14,
+    "paragraph": 2
+  },
+  {
+    "newStart": 19.34,
+    "newEnd": 25.82,
+    "oldStart": 19.14,
+    "oldEnd": 25.62,
+    "paragraph": 3
+  },
+  {
+    "newStart": 25.82,
+    "newEnd": 37.53999999999999,
+    "oldStart": 25.62,
+    "oldEnd": 37.339999999999996,
+    "paragraph": 4
+  },
+  {
+    "newStart": 37.53999999999999,
+    "newEnd": 43.81999999999999,
+    "oldStart": 37.339999999999996,
+    "oldEnd": 46.61999999999999,
+    "paragraph": 5
+  },
+  {
+    "newStart": 43.81999999999999,
+    "newEnd": 49.099999999999994,
+    "oldStart": 46.61999999999999,
+    "oldEnd": 51.89999999999999,
+    "paragraph": 6
+  },
+  {
+    "newStart": 49.099999999999994,
+    "newEnd": 64.14,
+    "oldStart": 51.89999999999999,
+    "oldEnd": 66.94,
+    "paragraph": 7
+  },
+  {
+    "newStart": 64.14,
+    "newEnd": 70.22,
+    "oldStart": 66.94,
+    "oldEnd": 73.02,
+    "paragraph": 8
+  },
+  {
+    "newStart": 70.22,
+    "newEnd": 74.34,
+    "oldStart": 73.02,
+    "oldEnd": 77.14,
+    "paragraph": 9
+  },
+  {
+    "newStart": 74.34,
+    "newEnd": 80.14,
+    "oldStart": 77.14,
+    "oldEnd": 82.94,
+    "paragraph": 10
+  },
+  {
+    "newStart": 80.14,
+    "newEnd": 84.7,
+    "oldStart": 82.94,
+    "oldEnd": 87.5,
+    "paragraph": 11
+  },
+  {
+    "newStart": 84.7,
+    "newEnd": 86.22,
+    "oldStart": 87.5,
+    "oldEnd": 89.02,
+    "paragraph": 12
+  }
+]

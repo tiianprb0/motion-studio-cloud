@@ -1,0 +1,33 @@
+{
+ "project": "projects/hari-pertama-kerja/v1",
+ "video": "Thumbnail-Hari-Pertama-v1-pose.png",
+ "created": "2026-11-13T05:45:11.911Z",
+ "files": {
+  "projects/hari-pertama-kerja/v1/src/Storyboard.tsx": "d99ceb28250e289da96797765dbe19b093488dfff4fa9968a04a72467575b4c8",
+  "projects/hari-pertama-kerja/v1/src/Thumb.tsx": "b0eb1b85523acdffb2a79ec2b3d8f08397921dc970ea7266b0b1f74df95d11c4",
+  "shared/assets/brand-data/v1.ts": "3a617670a9c28d5c32c252d96ced6af29dc079d29e35044e55a3b91d56447ff9",
+  "shared/assets/font-data/v1.ts": "ac718591ce9ec43a1b37e3f0a00dda01c91b8df8095b54ea55e3added63de920",
+  "shared/characters/kucing/v1/Kucing.tsx": "5dfc34fb86dbed85d62cf656b95a809a588bb92dac935ea63389b64f70acb7f1",
+  "shared/characters/rig/v2/Character.tsx": "500d50ee0326976d1bc1022bcce979ae40ad87630cf83f14ffe5abd3c836e3dd",
+  "shared/characters/rig/v2/ExtraFace.tsx": "4651e808fa4cc0d49c4414befd13466519bc471af69192e753f4c7db797e2ee2",
+  "shared/characters/rig/v2/ReferenceFace.tsx": "c24b8111181af047bc1012383788b4896b683572fc3c4ba2f66bac1cc5521547",
+  "shared/characters/rig/v2/SocialIcons.tsx": "e3a8d4a6e645491c781d5f65072b67020eddbdff78ad7bc6fd5bfbd0193115d8",
+  "shared/characters/rig/v2/brand-data.ts": "1d63f5d7776021c230d6bce2e27fddaac1ff03202460baeefb0ce5d673c6d431",
+  "shared/characters/rig/v2/fx.tsx": "f0239e7528bf8678a32d015198cdc62234c7cd1fe95dec59339fe8451ea57be3",
+  "shared/characters/rig/v2/poses.ts": "4880cfee07b6b7b348d9439d42a27c81c89a078ab96d3a5af20fe36640e60fe5",
+  "shared/core/v1/core.ts": "b113088bde26534e63244b79dd81ec97bf3c8c244f59532e17ff851e7b70b26e",
+  "shared/film/v1/Cahaya2D.tsx": "3f4598624d74a469579fe108e1d9bae9ebf62b500bc890f30747dd457f6f5a85",
+  "shared/film/v1/CaptionsDiam.tsx": "b67244925a2d067965b190368099e2adbb4795c74f69db1027b57d89cf0069e5",
+  "shared/film/v1/Depth.tsx": "268c542aabb15ed2ecee912f82bd88a7388d2f90495792d220e7d20edf3d18fa",
+  "shared/film/v1/Screen.tsx": "f09f434c34dd09101f330394579baaa605c84863633c3baa98236caccbe71377",
+  "shared/film/v2/Bubble.tsx": "2a745aa554c2feee4c70ee8fb6616ae0bc9b7ac50672a4329134e4bef2edd412",
+  "shared/locations/_detail/v1/Detail.tsx": "4b71f4018f10e094af2240b6207214273355afb195f7909d0176b30d3920a538",
+  "shared/locations/kafe-2d/v1/Kafe2D.tsx": "7c3b5276f43d4ed36756fb4c19de208a0efd22dc713a156afbb43b30ce5a0b02",
+  "shared/locations/kamar-kerja-2d/v1/KamarKerja2D.tsx": "a3924ff7bd5d558b58bb8de9bec352d29d6894f0d1a8b72f2b88721262d3594c",
+  "shared/locations/kantor-2d/v1/Kantor2D.tsx": "bc18f7ae7b8d8b983ed60321dfa455b0afd3bde1414d0e1e2b784865d0addbe6",
+  "shared/outro/v3/OutroC.tsx": "dc167038d521fe1c19481f754c685ca20cb7fffee382181f7ab4a0c91b1d0faa",
+  "shared/props/kantor/v1/Kantor.tsx": "c9f55897914f165933c7a9d2d087f9b32b4f317f8fceca73018031df77f9d73e",
+  "shared/props/minum/v1/Minum.tsx": "0dd75385ad8ef4771054f23e051d54b016e04710a353da09cf5116d60aa6778a",
+  "shared/ui/v2/Thumb.tsx": "a8acc8f362e0f4fcd7f80ebe358d1f05207f10973889d0aa2a6c6dffbf85e0f3"
+ }
+}

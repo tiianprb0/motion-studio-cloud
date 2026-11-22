@@ -1,0 +1,17 @@
+{
+  "note": "Pustaka tawa & tepuk tangan seri Open Mic. Dibuat SEKALI (7 Nov 2026) dengan ElevenLabs Sound Effects atas izin pengguna; episode berikutnya memakai ulang klip ini, tidak generate lagi.",
+  "clips": [
+    {"id": "kekeh-kecil-1", "duration": 2.5, "prompt": "Small comedy club audience of about 30 people, a few men and women chuckling softly right away, intimate cafe room, no music, laughter starts instantly"},
+    {"id": "kekeh-kecil-2", "duration": 2.5, "prompt": "Intimate stand-up comedy cafe audience giving a short amused chuckle and a couple of quiet giggles, mixed male and female, starts immediately, no music"},
+    {"id": "tawa-sedang-1", "duration": 3.5, "prompt": "Small comedy club crowd bursts into genuine laughter immediately, mixed men and women, warm cafe room ambience, laughter fades naturally, no applause, no music"},
+    {"id": "tawa-sedang-2", "duration": 3.5, "prompt": "Stand-up comedy audience in a small cafe laughing heartily at a punchline, starts instantly, several distinct men and women, then settles, no music"},
+    {"id": "tawa-sedang-cewek", "duration": 3.5, "prompt": "Small comedy club audience laughing at a joke, mostly women giggling and laughing loudly, a few men, starts immediately, cafe room, no music"},
+    {"id": "tawa-sedang-cowok", "duration": 3.5, "prompt": "Small comedy club audience laughing at a joke, mostly men with deep hearty laughs, a few women, starts immediately, cafe room, no music"},
+    {"id": "tawa-sinis", "duration": 3.5, "prompt": "Comedy club audience reacting to a dark satirical joke: a knowing 'ooooh' groan instantly turning into laughter, mixed men and women, small cafe, no music"},
+    {"id": "tawa-besar-1", "duration": 5.0, "prompt": "Small comedy club audience explodes into big roaring laughter immediately, people howling and cackling, mixed men and women, someone slaps a table, laughter slowly fades, no music"},
+    {"id": "tawa-besar-2", "duration": 5.0, "prompt": "Stand-up comedy crowd in a cafe erupts in huge uncontrollable laughter right away, mixed male and female voices, a few whoops, laughter rolls then fades, no music"},
+    {"id": "tawa-tepuk", "duration": 5.5, "prompt": "Comedy club audience laughing hard immediately while clapping hands in approval, a few cheers, mixed men and women, small cafe room, no music"},
+    {"id": "tepuk-singkat", "duration": 3.0, "prompt": "Small cafe comedy audience giving a short round of applause with light laughter, starts immediately, about 30 people, no music"},
+    {"id": "tepuk-penutup", "duration": 7.0, "prompt": "End of a stand-up comedy set in a small cafe: audience laughing then warm enthusiastic applause and cheers and whistles, about 40 people, starts immediately, gradually fades, no music"}
+  ]
+}

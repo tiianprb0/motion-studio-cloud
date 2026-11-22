@@ -1,0 +1,1 @@
+import map from './audio-map.json';export function visualFrame(frame:number){const sec=frame/30;if(sec<map[0].newStart)return frame;for(const m of map){if(sec<m.newEnd)return 30*(m.oldStart+(sec-m.newStart)*(m.oldEnd-m.oldStart)/(m.newEnd-m.newStart));}const m=map[map.length-1];return 30*(m.oldEnd+sec-m.newEnd);}

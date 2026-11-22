@@ -1,0 +1,83 @@
+{
+ "updated": "2026-11-07",
+ "selection": "one narrator per script, selected by agent for topic",
+ "delivery_tones": [
+  "normal",
+  "angry",
+  "sarcastic"
+ ],
+ "character_dialogue_voiceover": false,
+ "naya": {
+  "preserve_existing_voice": true,
+  "historical_name": "Leya",
+  "historical_voice_id": "hAiGVB2GdXVPlylkAP9C",
+  "verify_against_active_cache_before_generation": true,
+  "personality": [
+   "curious",
+   "likes giving examples",
+   "irritable"
+  ],
+  "voice_id": "hAiGVB2GdXVPlylkAP9C",
+  "name": "Leya",
+  "api_access_status": "verified_by_production",
+  "api_access_evidence": "request.json status complete: maaf-tanpa-kata v2 (eleven_v3, 7 Nov 2026), kurang-yakin v7 (eleven_v4_turbo). Akses tetap dicek tanpa biaya (--check) bila ragu.",
+  "model_policy": {
+   "normal": "eleven_v4",
+   "angry": "eleven_v4",
+   "sarcastic": "eleven_v4"
+  }
+ },
+ "yan": {
+  "voice_id": "URAuwR59OqCASDVp35yi",
+  "name": "Ibnu",
+  "library_name": "Ibnu - Calm & Clear (pustaka bersama ElevenLabs, profesional, young, tarif x1)",
+  "status": "user_selected_after_audition",
+  "desired_voice": [
+   "young male",
+   "calm",
+   "casual",
+   "slightly shy"
+  ],
+  "personality": [
+   "calm",
+   "likes learning",
+   "quiet"
+  ],
+  "selection_policy": "Ibnu dipilih pengguna setelah audisi 7 Nov 2026 (shared/audio/uji-suara-yan/v1). Preserve this voice ID; do not reselect or substitute automatically. API accessibility must be checked from actual status before paid generation.",
+  "selection_source": "User selection in chat on 2026-11-07 (\"aku pilih ibnu\"), after hearing the same stand-up bit by Abi, Rafiq, Ibnu, Angga, Raihan",
+  "auditioned": true,
+  "selection_confirmed": true,
+  "model_policy": {
+   "normal": "eleven_v4",
+   "angry": "eleven_v4",
+   "sarcastic": "eleven_v4"
+  },
+  "verified_models": [
+   "eleven_v4",
+   "eleven_v4_turbo",
+   "eleven_multilingual_v2",
+   "eleven_flash_v2_5",
+   "eleven_turbo_v2_5"
+  ],
+  "avoid_models": {
+   "eleven_v3": "Audisi 7 Nov 2026: keluar berderau (desis sepanjang take, lantai derau -27 dB). Di eleven_v4 bersih dan ekspresif."
+  },
+  "standup_settings": {
+   "model": "eleven_v4",
+   "stability": 0.0,
+   "evidence": "shared/audio/uji-suara-yan/v1/kandidat/ibnu-v4.mp3"
+  },
+  "api_access_evidence": "request.json status complete: audisi eleven_v3 dan eleven_v4 (7 Nov 2026, shared/audio/uji-suara-yan/v1/kandidat). GET /voices berhasil tanpa menambahkan ke My Voices.",
+  "historical_name": "Abi",
+  "historical_voice_id": "EOiisOG9mUn5iXbtXJuL",
+  "historical_note": "Abi (Calm, Breathy and Gravelly; middle_aged) dipakai sampai 7 Nov 2026: Tangan Kosong, Kritik, Syarat Protes v1-v5. Rekaman lama tetap dipakai untuk revisi visual proyek itu; jangan disuarakan ulang tanpa permintaan."
+ },
+ "provider": "elevenlabs_direct_api",
+ "credential_env": "ELEVENLABS_API_KEY",
+ "model_policy": {
+  "normal": "eleven_flash_v2_5",
+  "angry": "eleven_v3",
+  "sarcastic": "eleven_v3"
+ },
+ "model_policy_note": "Sejak 7 Nov 2026 (pengguna: \"selalu v4 please, karena ada nada bicara gak datar\"): Naya dan Yan SELALU eleven_v4 untuk semua nada; model_policy global di atas hanya bawaan historis untuk aktor lain. Pilihan aktual tercatat di request.json."
+}

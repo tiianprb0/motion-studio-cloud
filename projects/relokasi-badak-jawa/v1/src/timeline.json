@@ -1,0 +1,891 @@
+{
+ "fps": 30,
+ "outro": 2285,
+ "outro_start": 2273,
+ "total": 2339,
+ "lines": [
+  {
+   "text": "Pemerintah takut badak Jawa punah disapu tsunami.",
+   "start": 0.27,
+   "end": 3.317,
+   "words": [
+    {
+     "w": "Pemerintah",
+     "s": 0.27,
+     "e": 0.757
+    },
+    {
+     "w": "takut",
+     "s": 0.837,
+     "e": 1.237
+    },
+    {
+     "w": "badak",
+     "s": 1.317,
+     "e": 1.557
+    },
+    {
+     "w": "Jawa",
+     "s": 1.597,
+     "e": 1.797
+    },
+    {
+     "w": "punah",
+     "s": 1.957,
+     "e": 2.277
+    },
+    {
+     "w": "disapu",
+     "s": 2.357,
+     "e": 2.597
+    },
+    {
+     "w": "tsunami.",
+     "s": 2.637,
+     "e": 3.317
+    }
+   ]
+  },
+  {
+   "text": "Makanya di COP tiga puluh satu, utusan khusus presiden mengusulkan sebagian badak dari Ujung Kulon dipindah ke Alas Purwo.",
+   "start": 3.792,
+   "end": 10.792,
+   "words": [
+    {
+     "w": "Makanya",
+     "s": 3.792,
+     "e": 4.272
+    },
+    {
+     "w": "di",
+     "s": 4.312,
+     "e": 4.352
+    },
+    {
+     "w": "COP",
+     "s": 4.392,
+     "e": 4.512
+    },
+    {
+     "w": "tiga",
+     "s": 4.592,
+     "e": 4.672
+    },
+    {
+     "w": "puluh",
+     "s": 4.832,
+     "e": 4.912
+    },
+    {
+     "w": "satu,",
+     "s": 5.072,
+     "e": 5.632
+    },
+    {
+     "w": "utusan",
+     "s": 5.712,
+     "e": 6.032
+    },
+    {
+     "w": "khusus",
+     "s": 6.072,
+     "e": 6.352
+    },
+    {
+     "w": "presiden",
+     "s": 6.472,
+     "e": 6.832
+    },
+    {
+     "w": "mengusulkan",
+     "s": 6.872,
+     "e": 7.392
+    },
+    {
+     "w": "sebagian",
+     "s": 7.472,
+     "e": 7.872
+    },
+    {
+     "w": "badak",
+     "s": 7.952,
+     "e": 8.272
+    },
+    {
+     "w": "dari",
+     "s": 8.325,
+     "e": 8.432
+    },
+    {
+     "w": "Ujung",
+     "s": 8.512,
+     "e": 8.672
+    },
+    {
+     "w": "Kulon",
+     "s": 8.752,
+     "e": 9.072
+    },
+    {
+     "w": "dipindah",
+     "s": 9.312,
+     "e": 9.792
+    },
+    {
+     "w": "ke",
+     "s": 9.872,
+     "e": 9.952
+    },
+    {
+     "w": "Alas",
+     "s": 9.992,
+     "e": 10.192
+    },
+    {
+     "w": "Purwo.",
+     "s": 10.232,
+     "e": 10.792
+    }
+   ]
+  },
+  {
+   "text": "Oke. Terus warganya?",
+   "start": 11.277,
+   "end": 13.077,
+   "words": [
+    {
+     "w": "Oke.",
+     "s": 11.277,
+     "e": 11.957
+    },
+    {
+     "w": "Terus",
+     "s": 12.157,
+     "e": 12.397
+    },
+    {
+     "w": "warganya?",
+     "s": 12.437,
+     "e": 13.077
+    }
+   ]
+  },
+  {
+   "text": "Tsunami Selat Sunda dua ribu delapan belas menewaskan lebih dari empat ratus orang. Korban terbanyak di Pandeglang.",
+   "start": 13.572,
+   "end": 20.332,
+   "words": [
+    {
+     "w": "Tsunami",
+     "s": 13.572,
+     "e": 13.892
+    },
+    {
+     "w": "Selat",
+     "s": 13.972,
+     "e": 14.212
+    },
+    {
+     "w": "Sunda",
+     "s": 14.252,
+     "e": 14.532
+    },
+    {
+     "w": "dua",
+     "s": 14.572,
+     "e": 14.652
+    },
+    {
+     "w": "ribu",
+     "s": 14.692,
+     "e": 14.892
+    },
+    {
+     "w": "delapan",
+     "s": 14.932,
+     "e": 15.172
+    },
+    {
+     "w": "belas",
+     "s": 15.252,
+     "e": 15.492
+    },
+    {
+     "w": "menewaskan",
+     "s": 15.732,
+     "e": 16.292
+    },
+    {
+     "w": "lebih",
+     "s": 16.412,
+     "e": 16.692
+    },
+    {
+     "w": "dari",
+     "s": 16.772,
+     "e": 16.932
+    },
+    {
+     "w": "empat",
+     "s": 17.012,
+     "e": 17.132
+    },
+    {
+     "w": "ratus",
+     "s": 17.172,
+     "e": 17.412
+    },
+    {
+     "w": "orang.",
+     "s": 17.492,
+     "e": 18.132
+    },
+    {
+     "w": "Korban",
+     "s": 18.452,
+     "e": 18.692
+    },
+    {
+     "w": "terbanyak",
+     "s": 18.772,
+     "e": 19.252
+    },
+    {
+     "w": "di",
+     "s": 19.332,
+     "e": 19.412
+    },
+    {
+     "w": "Pandeglang.",
+     "s": 19.465,
+     "e": 20.332
+    }
+   ]
+  },
+  {
+   "text": "Pandeglang itu rumah badak Jawa. Dan rumah warga yang dulu dikubur gelombang yang sama.",
+   "start": 20.942,
+   "end": 26.462,
+   "words": [
+    {
+     "w": "Pandeglang",
+     "s": 20.942,
+     "e": 21.342
+    },
+    {
+     "w": "itu",
+     "s": 21.422,
+     "e": 21.662
+    },
+    {
+     "w": "rumah",
+     "s": 21.742,
+     "e": 21.942
+    },
+    {
+     "w": "badak",
+     "s": 21.982,
+     "e": 22.222
+    },
+    {
+     "w": "Jawa.",
+     "s": 22.302,
+     "e": 22.782
+    },
+    {
+     "w": "Dan",
+     "s": 23.262,
+     "e": 23.422
+    },
+    {
+     "w": "rumah",
+     "s": 23.502,
+     "e": 23.742
+    },
+    {
+     "w": "warga",
+     "s": 23.822,
+     "e": 24.142
+    },
+    {
+     "w": "yang",
+     "s": 24.222,
+     "e": 24.382
+    },
+    {
+     "w": "dulu",
+     "s": 24.462,
+     "e": 24.702
+    },
+    {
+     "w": "dikubur",
+     "s": 24.742,
+     "e": 25.102
+    },
+    {
+     "w": "gelombang",
+     "s": 25.182,
+     "e": 25.502
+    },
+    {
+     "w": "yang",
+     "s": 25.582,
+     "e": 25.662
+    },
+    {
+     "w": "sama.",
+     "s": 25.742,
+     "e": 26.462
+    }
+   ]
+  },
+  {
+   "text": "September kemarin, alat penerima peringatan dini tsunami di Tanjung Lesung masih diperbaiki.",
+   "start": 27.037,
+   "end": 32.237,
+   "words": [
+    {
+     "w": "September",
+     "s": 27.037,
+     "e": 27.437
+    },
+    {
+     "w": "kemarin,",
+     "s": 27.49,
+     "e": 28.317
+    },
+    {
+     "w": "alat",
+     "s": 28.397,
+     "e": 28.557
+    },
+    {
+     "w": "penerima",
+     "s": 28.637,
+     "e": 29.037
+    },
+    {
+     "w": "peringatan",
+     "s": 29.117,
+     "e": 29.517
+    },
+    {
+     "w": "dini",
+     "s": 29.557,
+     "e": 29.757
+    },
+    {
+     "w": "tsunami",
+     "s": 29.837,
+     "e": 30.237
+    },
+    {
+     "w": "di",
+     "s": 30.277,
+     "e": 30.317
+    },
+    {
+     "w": "Tanjung",
+     "s": 30.397,
+     "e": 30.637
+    },
+    {
+     "w": "Lesung",
+     "s": 30.717,
+     "e": 31.037
+    },
+    {
+     "w": "masih",
+     "s": 31.117,
+     "e": 31.437
+    },
+    {
+     "w": "diperbaiki.",
+     "s": 31.517,
+     "e": 32.237
+    }
+   ]
+  },
+  {
+   "text": "Badaknya disiapkan rumah baru. Warganya disiapkan apa?",
+   "start": 32.827,
+   "end": 36.027,
+   "words": [
+    {
+     "w": "Badaknya",
+     "s": 32.827,
+     "e": 33.107
+    },
+    {
+     "w": "disiapkan",
+     "s": 33.187,
+     "e": 33.587
+    },
+    {
+     "w": "rumah",
+     "s": 33.667,
+     "e": 33.827
+    },
+    {
+     "w": "baru.",
+     "s": 33.907,
+     "e": 34.387
+    },
+    {
+     "w": "Warganya",
+     "s": 34.547,
+     "e": 35.027
+    },
+    {
+     "w": "disiapkan",
+     "s": 35.107,
+     "e": 35.427
+    },
+    {
+     "w": "apa?",
+     "s": 35.507,
+     "e": 36.027
+    }
+   ]
+  },
+  {
+   "text": "Wacana sebesar ini diumumkan ke dunia, sebelum kajiannya ada. Kementerian Kehutanan sendiri bilang, ini masih wacana.",
+   "start": 36.306,
+   "end": 43.957,
+   "words": [
+    {
+     "w": "Wacana",
+     "s": 36.306,
+     "e": 36.717
+    },
+    {
+     "w": "sebesar",
+     "s": 36.797,
+     "e": 37.117
+    },
+    {
+     "w": "ini",
+     "s": 37.197,
+     "e": 37.437
+    },
+    {
+     "w": "diumumkan",
+     "s": 37.517,
+     "e": 37.997
+    },
+    {
+     "w": "ke",
+     "s": 38.077,
+     "e": 38.157
+    },
+    {
+     "w": "dunia,",
+     "s": 38.237,
+     "e": 38.957
+    },
+    {
+     "w": "sebelum",
+     "s": 39.077,
+     "e": 39.517
+    },
+    {
+     "w": "kajiannya",
+     "s": 39.557,
+     "e": 39.997
+    },
+    {
+     "w": "ada.",
+     "s": 40.077,
+     "e": 40.397
+    },
+    {
+     "w": "Kementerian",
+     "s": 40.877,
+     "e": 41.277
+    },
+    {
+     "w": "Kehutanan",
+     "s": 41.316,
+     "e": 41.756
+    },
+    {
+     "w": "sendiri",
+     "s": 41.877,
+     "e": 42.077
+    },
+    {
+     "w": "bilang,",
+     "s": 42.157,
+     "e": 42.637
+    },
+    {
+     "w": "ini",
+     "s": 42.756,
+     "e": 42.877
+    },
+    {
+     "w": "masih",
+     "s": 42.957,
+     "e": 43.157
+    },
+    {
+     "w": "wacana.",
+     "s": 43.197,
+     "e": 43.957
+    }
+   ]
+  },
+  {
+   "text": "Tapi warga Ujung Kulon nggak diam. Ratusan orang datang ke Balai Taman Nasional, menolak.",
+   "start": 44.227,
+   "end": 49.764,
+   "words": [
+    {
+     "w": "Tapi",
+     "s": 44.227,
+     "e": 44.563
+    },
+    {
+     "w": "warga",
+     "s": 44.644,
+     "e": 44.884
+    },
+    {
+     "w": "Ujung",
+     "s": 44.964,
+     "e": 45.123
+    },
+    {
+     "w": "Kulon",
+     "s": 45.204,
+     "e": 45.443
+    },
+    {
+     "w": "nggak",
+     "s": 45.483,
+     "e": 45.604
+    },
+    {
+     "w": "diam.",
+     "s": 45.684,
+     "e": 46.084
+    },
+    {
+     "w": "Ratusan",
+     "s": 46.563,
+     "e": 47.123
+    },
+    {
+     "w": "orang",
+     "s": 47.244,
+     "e": 47.364
+    },
+    {
+     "w": "datang",
+     "s": 47.443,
+     "e": 47.764
+    },
+    {
+     "w": "ke",
+     "s": 47.843,
+     "e": 47.884
+    },
+    {
+     "w": "Balai",
+     "s": 47.924,
+     "e": 48.084
+    },
+    {
+     "w": "Taman",
+     "s": 48.163,
+     "e": 48.324
+    },
+    {
+     "w": "Nasional,",
+     "s": 48.404,
+     "e": 49.044
+    },
+    {
+     "w": "menolak.",
+     "s": 49.123,
+     "e": 49.764
+    }
+   ]
+  },
+  {
+   "text": "Tuntutannya sederhana: jaga habitat aslinya, jangan dipindah.",
+   "start": 50.348,
+   "end": 54.348,
+   "words": [
+    {
+     "w": "Tuntutannya",
+     "s": 50.348,
+     "e": 50.828
+    },
+    {
+     "w": "sederhana:",
+     "s": 50.869,
+     "e": 51.869
+    },
+    {
+     "w": "jaga",
+     "s": 51.948,
+     "e": 52.268
+    },
+    {
+     "w": "habitat",
+     "s": 52.348,
+     "e": 52.668
+    },
+    {
+     "w": "aslinya,",
+     "s": 52.748,
+     "e": 53.468
+    },
+    {
+     "w": "jangan",
+     "s": 53.508,
+     "e": 53.788
+    },
+    {
+     "w": "dipindah.",
+     "s": 53.869,
+     "e": 54.348
+    }
+   ]
+  },
+  {
+   "text": "Ada juga yang curiga, ini soal tambang emas di perbatasan taman nasional. ESDM membantah. Antam juga.",
+   "start": 54.828,
+   "end": 62.028,
+   "words": [
+    {
+     "w": "Ada",
+     "s": 54.828,
+     "e": 54.988
+    },
+    {
+     "w": "juga",
+     "s": 55.069,
+     "e": 55.229
+    },
+    {
+     "w": "yang",
+     "s": 55.308,
+     "e": 55.389
+    },
+    {
+     "w": "curiga,",
+     "s": 55.468,
+     "e": 56.268
+    },
+    {
+     "w": "ini",
+     "s": 56.389,
+     "e": 56.509
+    },
+    {
+     "w": "soal",
+     "s": 56.588,
+     "e": 56.828
+    },
+    {
+     "w": "tambang",
+     "s": 56.881,
+     "e": 57.148
+    },
+    {
+     "w": "emas",
+     "s": 57.308,
+     "e": 57.468
+    },
+    {
+     "w": "di",
+     "s": 57.509,
+     "e": 57.548
+    },
+    {
+     "w": "perbatasan",
+     "s": 57.628,
+     "e": 58.108
+    },
+    {
+     "w": "taman",
+     "s": 58.188,
+     "e": 58.348
+    },
+    {
+     "w": "nasional.",
+     "s": 58.428,
+     "e": 59.069
+    },
+    {
+     "w": "ESDM",
+     "s": 59.628,
+     "e": 60.188
+    },
+    {
+     "w": "membantah.",
+     "s": 60.268,
+     "e": 60.908
+    },
+    {
+     "w": "Antam",
+     "s": 61.229,
+     "e": 61.548
+    },
+    {
+     "w": "juga.",
+     "s": 61.628,
+     "e": 62.028
+    }
+   ]
+  },
+  {
+   "text": "Tapi kecurigaan itu tumbuh karena satu hal: warga nggak pernah diajak bicara.",
+   "start": 62.934,
+   "end": 68.134,
+   "words": [
+    {
+     "w": "Tapi",
+     "s": 62.934,
+     "e": 63.334
+    },
+    {
+     "w": "kecurigaan",
+     "s": 63.414,
+     "e": 63.894
+    },
+    {
+     "w": "itu",
+     "s": 63.974,
+     "e": 64.134
+    },
+    {
+     "w": "tumbuh",
+     "s": 64.294,
+     "e": 64.614
+    },
+    {
+     "w": "karena",
+     "s": 64.694,
+     "e": 64.934
+    },
+    {
+     "w": "satu",
+     "s": 65.014,
+     "e": 65.334
+    },
+    {
+     "w": "hal:",
+     "s": 65.414,
+     "e": 66.134
+    },
+    {
+     "w": "warga",
+     "s": 66.174,
+     "e": 66.614
+    },
+    {
+     "w": "nggak",
+     "s": 66.654,
+     "e": 66.854
+    },
+    {
+     "w": "pernah",
+     "s": 66.934,
+     "e": 67.254
+    },
+    {
+     "w": "diajak",
+     "s": 67.334,
+     "e": 67.654
+    },
+    {
+     "w": "bicara.",
+     "s": 67.734,
+     "e": 68.134
+    }
+   ]
+  },
+  {
+   "text": "Kalau tsunami memang ancaman, selamatkan semuanya.",
+   "start": 68.593,
+   "end": 71.5,
+   "words": [
+    {
+     "w": "Kalau",
+     "s": 68.593,
+     "e": 68.7
+    },
+    {
+     "w": "tsunami",
+     "s": 68.78,
+     "e": 69.1
+    },
+    {
+     "w": "memang",
+     "s": 69.18,
+     "e": 69.34
+    },
+    {
+     "w": "ancaman,",
+     "s": 69.42,
+     "e": 70.14
+    },
+    {
+     "w": "selamatkan",
+     "s": 70.22,
+     "e": 70.78
+    },
+    {
+     "w": "semuanya.",
+     "s": 70.86,
+     "e": 71.5
+    }
+   ]
+  },
+  {
+   "text": "Badaknya, dan orang-orang yang hidup di sampingnya.",
+   "start": 71.968,
+   "end": 74.976,
+   "words": [
+    {
+     "w": "Badaknya,",
+     "s": 71.968,
+     "e": 72.736
+    },
+    {
+     "w": "dan",
+     "s": 72.816,
+     "e": 72.896
+    },
+    {
+     "w": "orang-orang",
+     "s": 73.056,
+     "e": 73.536
+    },
+    {
+     "w": "yang",
+     "s": 73.616,
+     "e": 73.696
+    },
+    {
+     "w": "hidup",
+     "s": 73.776,
+     "e": 74.016
+    },
+    {
+     "w": "di",
+     "s": 74.096,
+     "e": 74.176
+    },
+    {
+     "w": "sampingnya.",
+     "s": 74.216,
+     "e": 74.976
+    }
+   ]
+  }
+ ]
+}

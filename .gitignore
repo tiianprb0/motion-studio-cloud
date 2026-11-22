@@ -1,0 +1,67 @@
+# Dependensi dan toolchain — dipasang ulang, tidak perlu diversikan
+node_modules/
+.python-tools/
+.models/
+.toolchain/
+
+# Rahasia
+.env
+.env.*
+!example.env
+
+# Hasil antara yang bisa dibuat ulang
+output/
+/arsip/proyek-lama/previews/
+/arsip/proyek-lama/previews-v*/
+projects/*/v*/previews/
+
+# Artefak sementara pemanggilan tool
+mcp-result-*.json
+voice-choice.json
+public/voice-response.json
+
+# macOS
+.DS_Store
+
+# Catatan: narration*.mp3 SENGAJA dilacak. Audio ElevenLabs berbayar dan
+# tidak dapat direproduksi tanpa biaya; shared/previews/ juga dilacak
+# karena catalog.json merujuknya sebagai bukti.
+
+# Bytecode Python
+__pycache__/
+
+# Berkas sementara renderer/pratinjau (dibuat ulang tiap render)
+.svg-cpu.cjs
+.preview.cjs
+
+# Seri Lirik: lagu panduan milik pengguna dan preview dengan lagu
+# (lagu berhak cipta; hanya untuk sinkron dan review lokal, tidak diunggah)
+projects/*/v*/01-Brief/panduan-lagu.*
+projects/*/v*/04-Hasil/*-PREVIEW-lagu.mp4
+
+# Backsound (tools/backsound): lagu impor milik pengguna (bisa berhak cipta), berkas sementara,
+# dan hasil mix video (bisa dibuat ulang dari <nama>.resep.json)
+shared/audio/backsound/impor/
+shared/audio/backsound/**/.masuk-*
+projects/**/04-Hasil/backsound/*.mp4
+
+# Dashboard Studio: log server dari shortcut Studio Less.app
+reports/studio/server.log
+reports/studio/latar.log
+reports/studio/akses-hp.json
+reports/studio/tls/
+reports/studio/claude-terakhir.json
+reports/studio/claude-pemakaian.json
+reports/studio/konten/
+# catatan sinkron web Less. (berisi teks kiriman penonton)
+reports/studio/kampung.json
+reports/studio/kampung-uji.json
+
+# Cloud workspace
+.dev.vars
+.dev.vars.*
+firebase-debug.log
+*.log
+*.sqlite*
+*.mp4
+*.mov

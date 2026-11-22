@@ -1,0 +1,41 @@
+{
+  "status": "candidate-from-current-production; not independently approved",
+  "source": "projects/kurang-yakin-bukan-kurang-tahu/v1/src/World.tsx",
+  "face_source": "projects/kurang-yakin-bukan-kurang-tahu/v1/src/ExtraFace.tsx",
+  "notes": "Stable recipes for recurring extras, not new approved main characters. Distinct from Naya/Yan. Generic background variants remain allowed. Expressions and poses follow the new scene.",
+  "characters": [
+    {
+      "id": "courier-curly-01",
+      "appearance": 2,
+      "hair": "curly dark brown",
+      "accessory": "glasses",
+      "shirt": "#A99182",
+      "bottom": "#7F9290",
+      "role": "parcel carrier"
+    },
+    {
+      "id": "visitor-straight-02",
+      "appearance": 0,
+      "hair": "short side-swept dark",
+      "shirt": "#AB9199",
+      "bottom": "#8D9182",
+      "role": "visitor with closed book"
+    },
+    {
+      "id": "apology-covered-03",
+      "appearance": 1,
+      "hair_cover": "muted brown hijab",
+      "shirt": "#A99B86",
+      "bottom": "#A59C94",
+      "role": "apology listener"
+    },
+    {
+      "id": "apology-straight-04",
+      "appearance": 0,
+      "hair": "short side-swept dark",
+      "shirt": "#9BA9B4",
+      "bottom": "#8D8D82",
+      "role": "hesitant speaker"
+    }
+  ]
+}

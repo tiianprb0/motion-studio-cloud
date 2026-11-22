@@ -1,0 +1,23 @@
+{
+ "project": "projects/kebakaran-hutan-papua/v1",
+ "video": "Thumbnail-Bukan-Kesalahan-Kami-v1-pose.png",
+ "created": "2026-11-18T08:20:49.446Z",
+ "files": {
+  "projects/kebakaran-hutan-papua/v1/src/Thumb.tsx": "5963dad869761023205175c592da39183e3eca01611fa19ad2a5e9698972e4f0",
+  "shared/assets/brand-data/v1.ts": "3a617670a9c28d5c32c252d96ced6af29dc079d29e35044e55a3b91d56447ff9",
+  "shared/assets/font-data/v1.ts": "ac718591ce9ec43a1b37e3f0a00dda01c91b8df8095b54ea55e3added63de920",
+  "shared/characters/rig/v2/Character.tsx": "500d50ee0326976d1bc1022bcce979ae40ad87630cf83f14ffe5abd3c836e3dd",
+  "shared/characters/rig/v2/ExtraFace.tsx": "4651e808fa4cc0d49c4414befd13466519bc471af69192e753f4c7db797e2ee2",
+  "shared/characters/rig/v2/ReferenceFace.tsx": "c24b8111181af047bc1012383788b4896b683572fc3c4ba2f66bac1cc5521547",
+  "shared/characters/rig/v2/brand-data.ts": "1d63f5d7776021c230d6bce2e27fddaac1ff03202460baeefb0ce5d673c6d431",
+  "shared/characters/rig/v2/fx.tsx": "f0239e7528bf8678a32d015198cdc62234c7cd1fe95dec59339fe8451ea57be3",
+  "shared/characters/rig/v2/poses.ts": "4880cfee07b6b7b348d9439d42a27c81c89a078ab96d3a5af20fe36640e60fe5",
+  "shared/core/v1/core.ts": "b113088bde26534e63244b79dd81ec97bf3c8c244f59532e17ff851e7b70b26e",
+  "shared/locations/_detail/v1/Detail.tsx": "4b71f4018f10e094af2240b6207214273355afb195f7909d0176b30d3920a538",
+  "shared/locations/_detail/v2/Material.tsx": "3e19051d1cd42798d97183616fb6082733ab0f28c9902f3ea3c305d214a9e39d",
+  "shared/locations/bundaran-hi/v2/BundaranHI.tsx": "67b484504a6914eeaa0df5ccd4ca307561061e7099ca955d5d215f4e8b93bb1e",
+  "shared/props/aksi/v1/Aksi.tsx": "3f5e6fb1c4f2774f0a7d2df84c02c6d2e0cfacdcf4c86c8b1fb6e701021ebf20",
+  "shared/props/api/v1/Api.tsx": "6f956a27411c9da73e239de95d8a2eb899796ace693bcd1b3b2824ac46018733",
+  "shared/ui/v2/Thumb.tsx": "a8acc8f362e0f4fcd7f80ebe358d1f05207f10973889d0aa2a6c6dffbf85e0f3"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "project": "projects/relokasi-badak-jawa/v1",
+ "video": "Thumbnail-Badaknya-Diselamatkan-Warganya-v1-pose.png",
+ "created": "2026-11-21T09:04:36.254Z",
+ "files": {
+  "projects/relokasi-badak-jawa/v1/src/Thumb.tsx": "eb9644ce72d007a36fe6576e5273c105e620ed0d5cfa1c296227df0d908fd796",
+  "shared/assets/brand-data/v1.ts": "3a617670a9c28d5c32c252d96ced6af29dc079d29e35044e55a3b91d56447ff9",
+  "shared/assets/font-data/v1.ts": "ac718591ce9ec43a1b37e3f0a00dda01c91b8df8095b54ea55e3added63de920",
+  "shared/characters/badak/v1/Badak.tsx": "1ea5578db6e07769cca7347e3feb86c4fc627ff1c74434a276ab2456744a5b96",
+  "shared/characters/rig/v2/Character.tsx": "500d50ee0326976d1bc1022bcce979ae40ad87630cf83f14ffe5abd3c836e3dd",
+  "shared/characters/rig/v2/ExtraFace.tsx": "4651e808fa4cc0d49c4414befd13466519bc471af69192e753f4c7db797e2ee2",
+  "shared/characters/rig/v2/ReferenceFace.tsx": "c24b8111181af047bc1012383788b4896b683572fc3c4ba2f66bac1cc5521547",
+  "shared/characters/rig/v2/brand-data.ts": "1d63f5d7776021c230d6bce2e27fddaac1ff03202460baeefb0ce5d673c6d431",
+  "shared/characters/rig/v2/fx.tsx": "f0239e7528bf8678a32d015198cdc62234c7cd1fe95dec59339fe8451ea57be3",
+  "shared/characters/rig/v2/poses.ts": "4880cfee07b6b7b348d9439d42a27c81c89a078ab96d3a5af20fe36640e60fe5",
+  "shared/locations/pesisir-selat-sunda-2d/v1/PesisirSelatSunda2D.tsx": "8e48dfd49c326859d166d754d307538b49b213c24b9f5e50284332185bcb9736",
+  "shared/props/peringatan-dini/v1/PeringatanDini.tsx": "2036e4cfafc862360adf999a1aa0bba434db5422d87f12a9d811c6438bb2e281",
+  "shared/ui/v2/Thumb.tsx": "a8acc8f362e0f4fcd7f80ebe358d1f05207f10973889d0aa2a6c6dffbf85e0f3"
+ }
+}

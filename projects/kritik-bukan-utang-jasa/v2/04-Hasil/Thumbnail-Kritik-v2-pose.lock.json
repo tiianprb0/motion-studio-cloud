@@ -1,0 +1,25 @@
+{
+ "project": "projects/kritik-bukan-utang-jasa/v2",
+ "video": "Thumbnail-Kritik-v2-pose.png",
+ "created": "2026-11-10T15:55:55.244Z",
+ "files": {
+  "projects/kritik-bukan-utang-jasa/v2/src/Thumb.tsx": "53d438d144a6c4e01598123f1345df92b170e21f69e18589cf76f7e2fa1f74d1",
+  "shared/assets/brand-data/v1.ts": "3a617670a9c28d5c32c252d96ced6af29dc079d29e35044e55a3b91d56447ff9",
+  "shared/assets/font-data/v1.ts": "ac718591ce9ec43a1b37e3f0a00dda01c91b8df8095b54ea55e3added63de920",
+  "shared/characters/rig/v1/Character.tsx": "e203b9ecf6a63f71958a1ee8abe6a7bf1318b3450c87d895322c365755a864e7",
+  "shared/characters/rig/v1/ExtraFace.tsx": "4651e808fa4cc0d49c4414befd13466519bc471af69192e753f4c7db797e2ee2",
+  "shared/characters/rig/v1/ReferenceFace.tsx": "3813d4eec8bd29f763665df222eab29475963fa0a9b5af6a23228ed60a87a762",
+  "shared/characters/rig/v1/brand-data.ts": "1d63f5d7776021c230d6bce2e27fddaac1ff03202460baeefb0ce5d673c6d431",
+  "shared/characters/rig/v2/Character.tsx": "500d50ee0326976d1bc1022bcce979ae40ad87630cf83f14ffe5abd3c836e3dd",
+  "shared/characters/rig/v2/ExtraFace.tsx": "4651e808fa4cc0d49c4414befd13466519bc471af69192e753f4c7db797e2ee2",
+  "shared/characters/rig/v2/ReferenceFace.tsx": "c24b8111181af047bc1012383788b4896b683572fc3c4ba2f66bac1cc5521547",
+  "shared/characters/rig/v2/brand-data.ts": "1d63f5d7776021c230d6bce2e27fddaac1ff03202460baeefb0ce5d673c6d431",
+  "shared/characters/rig/v2/fx.tsx": "f0239e7528bf8678a32d015198cdc62234c7cd1fe95dec59339fe8451ea57be3",
+  "shared/characters/rig/v2/poses.ts": "4880cfee07b6b7b348d9439d42a27c81c89a078ab96d3a5af20fe36640e60fe5",
+  "shared/core/v1/core.ts": "b113088bde26534e63244b79dd81ec97bf3c8c244f59532e17ff851e7b70b26e",
+  "shared/locations/_detail/v1/Detail.tsx": "4b71f4018f10e094af2240b6207214273355afb195f7909d0176b30d3920a538",
+  "shared/locations/jalan-kampung/v1/JalanKampung.tsx": "34d30d94fbf606fd97e7f39f2e20298455c0643ca03216f074ea67700a942a8c",
+  "shared/props/harian/v1/Props.tsx": "844d41d66b5cf037d77efa6f91c2d88106d73644e4b22a7dbe215eff4f003748",
+  "shared/ui/v2/Thumb.tsx": "a8acc8f362e0f4fcd7f80ebe358d1f05207f10973889d0aa2a6c6dffbf85e0f3"
+ }
+}
