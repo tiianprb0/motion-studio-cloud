@@ -1,0 +1,36 @@
+name: Linux render proof
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  proof:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - name: Check out the requested commit
+        run: |
+          git init .
+          git fetch --depth=1 "https://github.com/$GITHUB_REPOSITORY.git" "$GITHUB_SHA"
+          git checkout --detach FETCH_HEAD
+
+      - name: Install renderer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+          npm --prefix tools install
+          npm --prefix tools exec -- playwright install --with-deps chromium
+
+      - name: Audit and render proof
+        run: |
+          export MOTION_STUDIO_FFMPEG="$(command -v ffmpeg)"
+          export MOTION_STUDIO_CHROME="$(node -p "require('./tools/node_modules/playwright').chromium.executablePath()")"
+          project=projects/relokasi-badak-jawa/v1
+          node tools/check-shared.cjs --locks
+          node tools/test-audit.cjs
+          node tools/render-film.cjs "$project" --audit=1
+          node tools/render-film.cjs "$project" --from=0 --to=30 --out="$RUNNER_TEMP/proof.mp4"
+          ffmpeg -v error -i "$RUNNER_TEMP/proof.mp4" -f null -
