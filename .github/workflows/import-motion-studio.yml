@@ -1,0 +1,32 @@
+name: Import Motion Studio source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: Import verified source archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/motion-studio-cloud-source.tar.gz"
+          asset=$(gh api "repos/$GITHUB_REPOSITORY/releases" --jq '.[] | select(.draft and .name == "Paket impor source Motion Studio") | .assets[] | select(.name == "motion-studio-cloud-source.tar.gz") | .id')
+          test -n "$asset"
+          gh api -H 'Accept: application/octet-stream' "repos/$GITHUB_REPOSITORY/releases/assets/$asset" > "$archive"
+          echo "da8ec3d4c95c7b722dba98a5b1ba653999132edb2e0590b68f5eef4d7957b9c4  $archive" | sha256sum --check
+          gh auth setup-git
+          gh repo clone "$GITHUB_REPOSITORY" "$RUNNER_TEMP/source" -- --branch main
+          cd "$RUNNER_TEMP/source"
+          test ! -e AGENTS.md
+          tar -xzf "$archive"
+          git add --all
+          git -c user.name=tiianprb0 -c user.email=136343253+tiianprb0@users.noreply.github.com commit -m "Add Motion Studio cloud production workspace"
+          git push origin HEAD:main
